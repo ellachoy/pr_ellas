@@ -1,0 +1,70 @@
+@use "sass:map";
+@use './colors';
+
+.header {
+  background: {
+    color: colors.$black;
+  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: {
+    block: {
+      start: 1rem;
+      end: 1rem;
+    }
+  }
+}
+
+.logo {
+  max: {
+    width: 7.5rem;
+    height: 3.125rem;
+  }
+  font: {
+
+  }
+  > a {
+    padding: {
+      block: {
+        start: 1rem;
+        end: 1rem;
+      }
+    }
+    line-height: 1;
+    span {
+      transition: color 0.33s ease-in-out;
+      color: colors.$primary;
+    }
+    span:first-child {
+      color: transparent;
+      -webkit-text-stroke: 1px colors.$primary;
+    }
+    span:last-child {
+      color: transparent;
+      -webkit-text-stroke: 1px colors.$secondary;
+      position: absolute;
+    }
+  }
+}
+
+.nav-menu {
+  display: flex;
+  gap: 4px;
+  a {
+    color: colors.$white;
+    padding: {
+      block: {
+        start: 8px;
+        end: 8px;
+      }
+      inline: {
+        start: 16px;
+        end: 16px;
+      }
+    }
+    &.active {
+      border: 1px solid colors.$primary;
+    }
+  }
+}

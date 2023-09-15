@@ -1,0 +1,23 @@
+@mixin hover-focus-state($type: false, $selectors: "") {
+  @if $type == hover {
+    &:hover {
+      @content;
+    }
+  }
+  @if $type == focus {
+    &:focus-visible {
+      @content;
+    }
+  }
+  @if $type == false {
+    &:hover,
+    &:focus-visible {
+      @content;
+    }
+  }
+  @if $selectors != "" {
+    #{$selectors} {
+      @content;
+    }
+  }
+}

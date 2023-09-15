@@ -1,0 +1,38 @@
+@use '../colors';
+
+// Breakpoint
+$smallBreakpoint: 360px;
+$mediumBreakpoint: 700px;
+$largeBreakpoint: 1024px;
+$x-largeBreakpoint: 1280px;
+$xx-largeBreakpoint: 1440px;
+
+@mixin small-breakpoint {
+  @media only screen and (max-width: $smallBreakpoint) {
+    @content;
+  }
+}
+
+@mixin medium-breakpoint {
+  @media only screen and (min-width: $mediumBreakpoint) {
+    @content;
+  }
+}
+
+@mixin large-breakpoint {
+  @media only screen and (min-width: $largeBreakpoint) {
+    @content;
+  }
+}
+
+@mixin x-large-breakpoint {
+  @media only screen and (min-width: $x-largeBreakpoint) {
+    @content;
+  }
+}
+
+@mixin xx-large-breakpoint {
+  @media only screen and (min-width: $xx-largeBreakpoint) {
+    @content;
+  }
+}
