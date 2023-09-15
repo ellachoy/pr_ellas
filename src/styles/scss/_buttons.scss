@@ -1,0 +1,77 @@
+@use 'sass:map';
+@use './colors';
+@use './mixins/hover-focus' as mixin;
+
+button {
+  font: {
+    family: unset;
+    size: unset;
+  }
+  line: {
+    height: unset;
+  }
+  border: {
+    style: none;
+    radius: unset;
+  }
+  cursor: pointer;
+  outline: 0;
+  color: unset;
+  background: {
+    color: unset;
+  }
+  transition: --button-color 0.33s ease-in-out, --button-background-color 0.33s ease-in-out,
+    transform 1.25s ease-in-out;
+}
+
+.button {
+  padding: {
+    block: {
+      start: 10px;
+      end: 10px;
+    }
+    inline: {
+      start: 30px;
+      end: 30px;
+    }
+  }
+  color: var(--button-color, #{colors.$white});
+  background: {
+    color: var(--button-background-color, #{colors.$white});
+  }
+  background: {
+    image: linear-gradient(
+      to right,
+      var(--button-background-color-hover, #{colors.$primary}) 40%,
+      var(--button-background-color, #{colors.$black}) 60%
+    );
+    size: 300% 100%;
+    position: 100%;
+  }
+  border: {
+    radius: 999px;
+    color: transparent;
+  }
+  transition: {
+    property: color, background-color, background, transform, opacity;
+    duration: 0.5s;
+    timing-function: ease-in-out;
+  }
+  @include mixin.hover-focus-state() {
+    color: var(--button-color-hover, #{colors.$white});
+    transform: scale(1.05);
+    background: {
+      position: 0;
+    }
+    transition: {
+      property: color, background-color, background, transform, opacity;
+      duration: 0.5s;
+      timing-function: ease-in-out;
+    }
+    background: linear-gradient(
+      328deg,
+      rgba(58, 76, 64, 1) 13%,
+      rgba(207, 187, 12, 0.9150035014005602) 100%
+    );
+  }
+}

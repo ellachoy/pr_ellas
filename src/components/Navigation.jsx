@@ -8,11 +8,13 @@ export default function Navigation() {
     <header className='header'>
       <div className='wrapper'>
          <div className='container'>
-             <Link to='/' className='logo'>
+            <div className='logo'>
+               <Link to='/'>
                <span>E</span>
                <span>C</span>
             </Link>
-            <nav>
+            </div>           
+            <nav className='nav-bar'>
                <ul className='nav-menu'>
                   <li>
                      <Link to='/' id="home" className='home active'>
@@ -26,7 +28,8 @@ export default function Navigation() {
                      <Link to='/Footer' id="footer" className='footer'>Footer</Link> 
                   </li>
                </ul>           
-            </nav>        
+            </nav>
+            <button className="trigger" aria-label="navigation menu toggle"></button>        
          </div>  
       </div>               
    </header>

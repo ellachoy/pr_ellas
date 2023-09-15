@@ -1,0 +1,40 @@
+@use 'sass:map';
+@use './colors' as colors;
+@use './typo/variables' as typo;
+@use './mixins/breakpoint' as breakpoint;
+
+.nav-bar {
+  width: 100%;
+  .nav-menu {
+    display: flex;
+    flex: {
+      direction: column;
+    }
+    gap: 16px;
+    text-align: center;
+    a {
+      color: colors.$white;
+      padding: {
+        block: {
+          start: 8px;
+          end: 8px;
+        }
+        inline: {
+          start: 16px;
+          end: 16px;
+        }
+      }
+      &.active {
+        border: 1px solid colors.$primary;
+      }
+    }
+  }
+  @include breakpoint.large-breakpoint {
+    width: unset;
+    .nav-menu {
+      flex: {
+        direction: row;
+      }
+    }
+  }
+}

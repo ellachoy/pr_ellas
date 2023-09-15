@@ -1,5 +1,5 @@
 @use 'sass:map';
-@use './colors';
+@use './colors' as colors;
 @use './typo/variables' as typo;
 @use './mixins/breakpoint' as breakpoint;
 
@@ -16,6 +16,19 @@
       end: 1rem;
     }
   }
+  .container {
+    flex: {
+      direction: column;
+    }
+    align-items: start;
+    @include breakpoint.large-breakpoint {
+      flex: {
+        direction: row;
+      }
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
 
 .logo {
@@ -24,51 +37,75 @@
     height: 3.125rem;
   }
   font: {
-    family: typo.$font-family-body;
+    family: typo.$font-family-primary;
     size: clamp(24px, 2vw, 36px);
-    weight: map.get(typo.$font-weights, 'normal');
+    weight: map.get(typo.$font-weights, 'regular');
   }
-  > a {
-    padding: {
-      block: {
-        start: 1rem;
-        end: 1rem;
-      }
+  padding: {
+    block: {
+      start: 1rem;
+      end: 1rem;
     }
-    line-height: 1;
-    span {
-      transition: color 0.33s ease-in-out;
-      color: colors.$primary;
-    }
-    span:first-child {
-      color: transparent;
-      -webkit-text-stroke: 1px colors.$primary;
-    }
-    span:last-child {
-      color: transparent;
-      -webkit-text-stroke: 1px colors.$secondary;
-      position: absolute;
-    }
+  }
+  line-height: 1;
+  color: red;
+  span {
+    transition: color 0.33s ease-in-out;
+  }
+  span:first-child {
+    color: transparent;
+    -webkit-text-stroke: 1px colors.$primary;
+  }
+  span:last-child {
+    color: transparent;
+    -webkit-text-stroke: 1px colors.$secondary;
+    position: absolute;
+    top: 7px;
   }
 }
 
-.nav-menu {
-  display: flex;
-  gap: 4px;
-  a {
-    color: colors.$white;
-    padding: {
+.trigger {
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  &::before,
+  &::after {
+    content: '';
+    height: 3px;
+    width: 30px;
+    display: block;
+    margin: {
       block: {
-        start: 8px;
-        end: 8px;
+        start: 6px;
+        end: 6px;
       }
       inline: {
-        start: 16px;
-        end: 16px;
+        start: auto;
+        end: auto;
       }
     }
-    &.active {
-      border: 1px solid colors.$primary;
+    background: {
+      color: colors.$white-inactive;
     }
+    transition: {
+      property: color, background-color, transform;
+      duration: 0.5s;
+      timing-function: ease-in-out;
+    }
+  }
+
+  &::before {
+    transform: translateY(0) rotate(0);
+    transition: transform 1.25s cubic-bezier(0.5, 0.2, 0.2, 1),
+      background-color 1.25s ease;
+  }
+  &::after {
+    font-size: 16px;
+    transform: translateY(0) rotate(0);
+    transition: transform 1.25s cubic-bezier(0.5, 0.2, 0.2, 1),
+      background-color 1.25s ease;
+  }
+  @include breakpoint.large-breakpoint {
+    display: none;
   }
 }

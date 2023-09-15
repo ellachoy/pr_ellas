@@ -4,6 +4,8 @@
 @use './colors';
 @use './wrapper';
 @use './container';
+@use './navigation';
+@use './buttons';
 @use './mixins/hover-focus';
 @use './mixins/breakpoint';
 @use './typo/index';
