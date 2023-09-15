@@ -30,6 +30,13 @@
       justify-content: space-between;
     }
   }
+  &::after {
+    content: '';
+    background: {
+      color: grey;
+    }
+    
+  }
 }
 
 .logo {
@@ -106,12 +113,12 @@
       background-color 1.25s ease;
   }
   @include hover-focus.hover-focus-state {
-      &::after,
-      &::before {
-        background: {
+    &::after,
+    &::before {
+      background: {
         color: colors.$white;
       }
-    }     
+    }
   }
   @include breakpoint.large-breakpoint {
     display: none;
