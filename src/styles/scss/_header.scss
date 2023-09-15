@@ -1,5 +1,7 @@
 @use "sass:map";
 @use './colors';
+@use './typo';
+@use './mixins/breakpoint';
 
 .header {
   background: {
@@ -20,6 +22,11 @@
   max: {
     width: 7.5rem;
     height: 3.125rem;
+  }
+  font: {
+  family: typo.$font-family-body;
+  size: clamp(24px, 2vw, 36px);
+  weight: map.get(typo.$font-weights, "normal");
   }
   > a {
     padding: {
