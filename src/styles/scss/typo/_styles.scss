@@ -5,7 +5,7 @@
 body {
   font: {
     family: variables.$font-family-body;
-    weight: map.get(variables.$font-weights, 'normal');
+    weight: map.get(variables.$font-weights, 'regular');
   }
   line: {
     height: 1.5;

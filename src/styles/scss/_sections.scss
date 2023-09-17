@@ -1,0 +1,18 @@
+@use './mixins/breakpoint' as breakpoint;
+
+.section {
+  padding: {
+    block: {
+      start: 3rem;
+      end: 3rem;
+    }
+  }
+  @include breakpoint.medium-breakpoint {
+    padding: {
+      block: {
+        start: 6rem;
+        end: 6rem;
+      }
+    }
+  }
+}

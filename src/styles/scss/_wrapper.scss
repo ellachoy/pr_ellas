@@ -26,3 +26,21 @@ $padding: 2vw;
     }
   }
 }
+
+.inner-wrapper {
+  padding: {
+    inline: {
+      start: calc($padding + 1rem);
+      end: calc($padding + 1rem);
+    }
+  }
+  @include breakpoints.large-breakpoint {
+      padding: {
+      inline: {
+        start: $padding * 2;
+        end: $padding * 2;
+      }
+    }
+  }
+
+}
