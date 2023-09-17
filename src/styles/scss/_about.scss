@@ -4,10 +4,11 @@
 .about {
   position: relative;
   .container {
+    width: 100%;
     flex: {
       direction: column;
     }
-    gap: 16px 24px;
+    gap: 16px 54px;
     @include breakpoint.large-breakpoint {
       flex: {
         direction: row;
@@ -22,6 +23,17 @@
     @include breakpoint.x-large-breakpoint {
       flex: {
         direction: row;
+      }
+      .panel {
+        li {
+          &:nth-child(2) {
+            margin: {
+              inline: {
+                start: 50%;
+              }
+            }
+          }
+        }
       }
     }
   }

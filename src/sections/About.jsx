@@ -32,13 +32,14 @@ export default function About() {
             <li className="panel-item">
               <div className="panel-item-text">
                 <h4 className="h5">Starke Mental</h4>
-                <p>Lorem</p>
+                <p>ㅣㅐㄱ드</p>
               </div> 
             </li>
             <li className="panel-item">
                <div className="panel-item-text">
                 <h4 className="h5">Aktive Lernen</h4>
-                <p>Lorem</p>
+                <p>Schokolade fallt nicht aus dem Himmel! immer raschachieren nach neues
+                </p>
               </div> 
             </li>
         </ul>
