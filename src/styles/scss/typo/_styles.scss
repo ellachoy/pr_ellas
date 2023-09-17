@@ -27,8 +27,7 @@ body {
 
 :is(.h1, .h2, .h3, .h4, .h5, .h6) {
   font: {
-    family: variables.$font-family-primary;
-    weight: map.get(variables.$font-weights, 'normal');
+    weight: map.get(variables.$font-weights, 'bold');
   }
   word: {
     break: break-word;
@@ -99,5 +98,20 @@ body {
 p {
   font: {
     size: clamp(14px, 2vw, 16px);
+  }
+}
+
+.title-label {
+  color: colors.$secondary;
+}
+
+blockquote {
+  p {
+    &::before {
+        content: '\201C';
+    }
+    &::after {
+       content: '\201D';
+    }
   }
 }
