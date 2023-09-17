@@ -1,7 +1,7 @@
-@use './mixins/breakpoint' as breakpoints;
+@use './mixins/breakpoint' as breakpoint;
 
 $max-width: 1280px;
-$padding: 2vw;
+$padding: 3vw;
 
 .wrapper {
   max: {
@@ -17,8 +17,8 @@ $padding: 2vw;
     right: auto;
     left: auto;
   }
-  @include breakpoints.large-breakpoint {
-      padding: {
+  @include breakpoint.x-large-breakpoint {
+    padding: {
       inline: {
         start: $padding * 2;
         end: $padding * 2;
@@ -30,17 +30,16 @@ $padding: 2vw;
 .inner-wrapper {
   padding: {
     inline: {
-      start: calc($padding + 1rem);
-      end: calc($padding + 1rem);
+      start: calc($padding);
+      end: calc($padding);
     }
   }
-  @include breakpoints.large-breakpoint {
-      padding: {
+  @include breakpoint.large-breakpoint {
+    padding: {
       inline: {
         start: $padding * 2;
         end: $padding * 2;
       }
     }
   }
-
 }

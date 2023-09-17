@@ -10,6 +10,7 @@ body {
   line: {
     height: 1.5;
   }
+  margin: 0;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -97,7 +98,7 @@ body {
 
 p {
   font: {
-    size: clamp(14px, 2vw, 16px);
+    size: clamp(16px, 2vw, 18px);
   }
 }
 
@@ -106,12 +107,35 @@ p {
 }
 
 blockquote {
-  p {
+  position: relative;
+  > p {
+    font-style: italic;
+    &::before,
+    &::after {
+      font: {
+        size: 48px;
+        weight: bold;
+      }
+      color: colors.$grey-light;
+      position: absolute;
+    }
     &::before {
-        content: '\201C';
+      content: '\201C';
+      top: -10%;
+      left: -6%;
+      margin: {
+        inline: {
+          end: 5px;
+        }
+      }
     }
     &::after {
-       content: '\201D';
+      content: '\201D';
+      margin: {
+        inline: {
+          start: 5px;
+        }
+      }
     }
   }
 }

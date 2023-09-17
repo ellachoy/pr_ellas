@@ -4,8 +4,7 @@ export default function Home() {
   return (
     <section id="home" className="section home">
       <div className="wrapper">
-        <div className="inner-wrapper">
-          <div className="content">
+        <div className="content">
             <h1 className="h1 content-text">
               <div className="phrase">
                 <span>
@@ -22,8 +21,7 @@ export default function Home() {
                 <li></li>
                 <li></li>
             </ul>
-          </div>
-        </div>    
+        </div>   
       </div>
     </section>
   );

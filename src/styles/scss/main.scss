@@ -8,16 +8,15 @@
 @use './navigation';
 @use './buttons';
 @use './home';
+@use './about';
 @use './mixins/hover-focus';
 @use './mixins/breakpoint';
 @use './typo/index';
 
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: smooth;
 }

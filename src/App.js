@@ -4,7 +4,7 @@ import About from './sections/About';
 
 import './index.scss'
 
-function App() {
+export default function App() {
   return (
     <>
       <Navigation/>
@@ -15,5 +15,3 @@ function App() {
    
     );
 }
-
-export default App;
