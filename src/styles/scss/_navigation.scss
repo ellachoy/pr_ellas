@@ -6,8 +6,12 @@
 
 .nav-bar {
   width: 100%;
+  font: {
+    size: clamp(16px, 1.5vw, 24px);
+    family: typo.$font-family-primary;
+  }
   .nav-menu {
-    display: flex;
+    display: none;
     flex: {
       direction: column;
     }
@@ -33,10 +37,10 @@
       }
     }
   }
-
   @include breakpoint.large-breakpoint {
     width: unset;
     .nav-menu {
+      display: flex;
       flex: {
         direction: row;
       }
