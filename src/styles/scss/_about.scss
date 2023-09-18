@@ -4,40 +4,23 @@
 .about {
   position: relative;
   .container {
-    width: 100%;
     flex: {
       direction: column;
     }
-    gap: 16px 54px;
+    gap: 62px;
+  }
+
+  .panel {
+    display: flex;
+    flex: {
+      direction: column;
+    }
+    gap: 24px 62px;
     @include breakpoint.large-breakpoint {
       flex: {
         direction: row;
       }
-      .content {
-        width: 55%;
-      }
-      .panel {
-        width: 45%;
-      }
     }
-    @include breakpoint.x-large-breakpoint {
-      flex: {
-        direction: row;
-      }
-      .panel {
-        li {
-          &:nth-child(2) {
-            margin: {
-              inline: {
-                start: 50%;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .panel {
     li {
       position: relative;
       margin: {
@@ -45,15 +28,23 @@
           start: 18px;
         }
       }
+      border-radius: 50%;
       --symbole-width: clamp(20rem, 8vw, 35rem);
       --symbole-height: clamp(20rem, 8vw, 35rem);
     }
   }
   .panel-item-text {
+    color: colors.$white;
     text-align: center;
     position: absolute;
     top: 20%;
     left: 0;
     right: 0;
+    padding: {
+      inline: {
+        start: 24px;
+        end: 24px;
+      }
+    }
   }
 }

@@ -6,7 +6,7 @@ export default function About() {
       <div className="wrapper">
         <div className="container">
           <div className="content">
-            <h2 className="h4 title-label">
+            <h2 className="h4 title-label">        
               About Me
             </h2>
             <h3 class="h2">Was ich wichtige Punkte über Frontend web Entwicklung halte,
@@ -25,20 +25,20 @@ export default function About() {
           <ul className="panel">
             <li className="panel-item">
               <div className="panel-item-text">
-                <h4 className="h5">Kommunikation</h4>
-                <p>Lorem</p>
+                <h4 className="h4">Kommunikation</h4>
+                <p className="small">wenn es Arbeit geht, Bevor ich falsch mache, liber frage ich noch mal und versuche ich mit mein Team immer Kommunikative zu sein</p>
               </div>  
             </li>
             <li className="panel-item">
               <div className="panel-item-text">
-                <h4 className="h5">Starke Mental</h4>
-                <p>ㅣㅐㄱ드</p>
+                <h4 className="h4">Starke Mental</h4>
+                <p className="small">Fokusiere ich auf meine tägliche Entwicklung!. alles sind nicht perfekt. </p>
               </div> 
             </li>
             <li className="panel-item">
                <div className="panel-item-text">
-                <h4 className="h5">Aktive Lernen</h4>
-                <p>Schokolade fallt nicht aus dem Himmel! immer raschachieren nach neues
+                <h4 className="h4">Aktive Lernen</h4>
+                <p className="small">Schokolade fallt nicht aus dem Himmel! immer raschachieren nach neues
                 </p>
               </div> 
             </li>

@@ -98,7 +98,19 @@ body {
 
 p {
   font: {
-    size: clamp(16px, 2vw, 18px);
+    size: clamp(18px, 2vw, 20px);
+  }
+  line: {
+    height: 1.5;
+  }
+}
+
+.small {
+  font: {
+    size: clamp(16px, 1.5vw, 18px);
+  }
+  line: {
+    height: 1.5;
   }
 }
 
@@ -108,6 +120,13 @@ p {
 
 blockquote {
   position: relative;
+  z-index: -1;
+  margin: {
+    block: {
+      start: 2.5rem;
+      end: 2em;
+    }
+  }
   > p {
     font-style: italic;
     &::before,
@@ -116,13 +135,13 @@ blockquote {
         size: 48px;
         weight: bold;
       }
-      color: colors.$grey-light;
+      color: colors.$primary-quote;
       position: absolute;
     }
     &::before {
       content: '\201C';
       top: -10%;
-      left: -6%;
+      left: -3%;
       margin: {
         inline: {
           end: 5px;

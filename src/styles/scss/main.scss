@@ -12,6 +12,7 @@
 @use './mixins/hover-focus';
 @use './mixins/breakpoint';
 @use './typo/index';
+@use './grid';
 
 * {
   box-sizing: border-box;

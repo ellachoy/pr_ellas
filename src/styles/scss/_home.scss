@@ -27,6 +27,7 @@
     z-index: 1;
   }
   .phrase {
+    letter-spacing: 0.025em;
     color: transparent;
     -webkit-text-stroke: 2px rgb(244, 244, 236);
     &:first-child {
@@ -40,6 +41,7 @@
 
 .symbols {
   li {
+    border-radius: 50%;
     &:first-child {
       position: absolute;
       top: -9%;
