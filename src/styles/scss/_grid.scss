@@ -1,0 +1,52 @@
+@use './mixins/breakpoint' as breakpoint;
+
+$columns: 12;
+$gap: 24px;
+
+.grid-container {
+  display: grid;
+  grid: {
+    template: {
+      columns: repeat(12, 1fr);
+    }
+    row: {
+      gap: 0;
+    }
+    column: {
+      gap: 1.5rem;
+    }
+  }
+  .grid-item {
+    min: {
+      width: 0;
+    }
+    grid: {
+      column: span $columns;
+    }
+    @include breakpoint.small-breakpoint {
+      grid: {
+        column: span var(--span-small, $columns);
+      }
+    }
+    @include breakpoint.medium-breakpoint {
+      grid: {
+        column: span var(--span-medium, var(--span-small, $columns));
+      }
+    }
+    @include breakpoint.large-breakpoint {
+      grid: {
+        column: span
+          var(--span-large, var(--span-medium, var(--span-small, $columns)));
+      }
+    }
+    @include breakpoint.x-large-breakpoint {
+      grid: {
+        column: span
+          var(
+            --span-x-large,
+            var(--span-large, var(--span-medium, var(--span-small, $columns)))
+          );
+      }
+    }
+  }
+}
