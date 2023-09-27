@@ -1,0 +1,118 @@
+@use './mixins/breakpoint' as breakpoint;
+@use './colors';
+
+.skills{
+  background: {
+    color: colors.$black;
+  }
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 27px), 0 100%);
+  color: colors.$white;
+  &.is-in-viewport {
+    li {
+      &:nth-child(odd) {
+        .container {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      &:nth-child(even) {
+        .container {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: disc;
+    margin: {
+      block: {
+        start: 7rem;
+        end: 5rem;
+      }
+    }
+  }
+  @include breakpoint.medium-breakpoint {
+    flex-direction: row;
+  }
+  li {
+    width: calc(100% - 2rem);
+    overflow: hidden;
+    flex: 0 0 auto;
+    min-height: 0px;
+    min-width: 0px;
+    margin: {
+      block: {
+        start: 1.2rem;
+        end: 1.2rem;
+      }
+    }
+    @include breakpoint.medium-breakpoint {
+      width: calc(50% - 2.5rem);
+      margin: {
+        inline: {
+          start: 1.2rem;
+          end: 1.2rem;
+        }
+      }
+    }
+    .container {
+      flex-wrap: unset;
+      align-items: baseline;
+      transition: transform 1.2s ease-out, -webkit-transform 1.2s ease-out;
+      gap: 0 16px;
+      flex-direction: column;
+      @include breakpoint.large-breakpoint {
+        flex-direction: row;
+      }
+    }
+    &:nth-child(odd) {
+      .container {
+        //-webkit-transform: translateX(100%);
+        //transform: translateX(100%);
+        //opacity: 0;
+      }
+    }
+    &:nth-child(even) {
+      .container {
+        //-webkit-transform: translateX(-100%);
+        //transform: translateX(-100%);
+        //opacity: 0;
+      }
+    }
+    .headline {
+      min-width: 8rem;
+      height: 2rem;
+      margin: {
+        block: {
+          end: unset;
+        }
+        inline: {
+          end: 2rem;
+        }
+      }
+    }
+    p {
+      margin: {
+        block: {
+          start: unset;
+          end: unset;
+        }
+      }
+    }
+  }
+}
+
+.button-container {
+  color: colors.$white;
+  ul {
+    display: flex;
+  }
+  .button {
+    border: colors.$primary solid 1px;
+  }
+}
