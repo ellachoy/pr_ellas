@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Route, Link, Routes} from 'react-router-dom';
 import Skills from './Skills';
 import About from './About';
 import Home from './Home';
+import Symbols from './elements/_symbols-list';
 
 
 export default function Header() {
@@ -12,6 +13,18 @@ export default function Header() {
    const toggleMenu = () => setIsOpen(!isOpen);
    const hide = () => setIsOpen(false);
    const show = () => setIsOpen(true);
+
+   useEffect (() => {
+      const closeMenu = (event) => {
+         if (event.key === 'Escape') {
+            setIsOpen(false);
+         }
+      };
+      window.addEventListener('keydown', closeMenu);
+      return () => {
+      window.removeEventListener('keydown', closeMenu);
+    };
+   }, []);
    
   
   return (
@@ -41,11 +54,7 @@ export default function Header() {
                      <AnchorLink href='#footer' onClick={hide} onBlur={hide} onFocus={show}>Footer</AnchorLink> 
                   </li>
                </ul>
-               <ul className="symbols">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>              
+               <Symbols />    
          </nav>
          <Routes>
             <Route path="/" component={<Home />} />
