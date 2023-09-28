@@ -23,8 +23,20 @@
   }
   .content-text {
     position: relative;
+    display: flex;
+    flex: {
+      direction: column;
+    }
     text-align: center;
     z-index: 1;
+    &.active {
+      .phrase {
+        &:first-child {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
   }
   .phrase {
     letter-spacing: 0.025em;
@@ -32,9 +44,22 @@
     -webkit-text-stroke: 2px rgb(244, 244, 236);
     &:first-child {
       -webkit-text-stroke-color: colors.$white;
+      padding: {
+        block: {
+          end: 1rem;
+        }
+      }
+      transform: translateY(100%);
+      opacity: 0;
+      transition: transform 2s, opacity 0.5s ease-out;
     }
     &:last-child {
       -webkit-text-stroke-color: colors.$primary;
+      padding: {
+        block: {
+          start: 1rem;
+        }
+      }
     }
   }
 }
