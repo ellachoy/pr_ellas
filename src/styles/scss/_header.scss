@@ -4,10 +4,11 @@
 @use './mixins/breakpoint' as breakpoint;
 @use './mixins/hover-focus' as hover-focus;
 
-.header {
+header {
   background: {
     color: colors.$black;
   }
+  z-index: 5;
   position: fixed;
   top: 0;
   width: 100%;
@@ -17,23 +18,31 @@
       end: 1rem;
     }
   }
+  &.is-nav-open {
+    nav {
+      display: block;
+      &::after {
+        background-color: black;
+        opacity: 1;
+        transition: opacity 1.25s ease-in-out;
+      }
+    }
+    .trigger {
+      &::before {
+        transform: translateY(0) rotate(45deg);
+      }
+      &::after {
+        transform: translateY(-9px) rotate(-45deg);
+      }
+    }
+  }
   .container {
     flex: {
-      direction: column;
+      direction: row;
     }
     align-items: start;
     @include breakpoint.large-breakpoint {
-      flex: {
-        direction: row;
-      }
       align-items: center;
-      justify-content: space-between;
-    }
-  }
-  &::after {
-    content: '';
-    background: {
-      color: grey;
     }
   }
 }
@@ -44,7 +53,7 @@
     height: 3.125rem;
   }
   font: {
-    size: clamp(24px, 2vw, 36px);
+    size: clamp(28px, 2vw, 36px);
     weight: map.get(typo.$font-weights, 'regular');
   }
   padding: {
@@ -67,58 +76,5 @@
     -webkit-text-stroke: 1px colors.$secondary;
     position: absolute;
     top: 7px;
-  }
-}
-
-.trigger {
-  position: absolute;
-  top: 1.6rem;
-  right: 1rem;
-  &::before,
-  &::after {
-    content: '';
-    height: 3px;
-    width: 30px;
-    display: block;
-    margin: {
-      block: {
-        start: 6px;
-        end: 6px;
-      }
-      inline: {
-        start: auto;
-        end: auto;
-      }
-    }
-    background: {
-      color: colors.$white-inactive;
-    }
-    transition: {
-      property: color, background-color, transform;
-      duration: 0.5s;
-      timing-function: ease-in-out;
-    }
-  }
-  &::before {
-    transform: translateY(0) rotate(0);
-    transition: transform 1.25s cubic-bezier(0.5, 0.2, 0.2, 1),
-      background-color 1.25s ease;
-  }
-  &::after {
-    font-size: 16px;
-    transform: translateY(0) rotate(0);
-    transition: transform 1.25s cubic-bezier(0.5, 0.2, 0.2, 1),
-      background-color 1.25s ease;
-  }
-  @include hover-focus.hover-focus-state {
-    &::after,
-    &::before {
-      background: {
-        color: colors.$white;
-      }
-    }
-  }
-  @include breakpoint.large-breakpoint {
-    display: none;
   }
 }

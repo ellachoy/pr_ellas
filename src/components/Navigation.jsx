@@ -1,36 +1,45 @@
-import React from 'react';
+import {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 
 export default function Navigation() {
+
+   const [isOpen, setMenu] = useState(false);
+
+   const toggleMenu = () => {
+      setMenu(!isOpen);
+   }
   
   return (
-    <header className='header'>
+    <header className={isOpen ? "is-nav-open" : "is-nav-close"}>
       <div className='wrapper'>
          <div className='container'>
             <div className='logo'>
                <Link to='/'>
-               <span>E</span>
-               <span>C</span>
-            </Link>
-            </div>           
-            <nav className='nav-bar'>
-               <ul className='nav-menu'>
+                  <span>E</span>
+                  <span>C</span>
+               </Link>
+            </div>
+            <button className="trigger" aria-label="navigation menu toggle" onClick={() => toggleMenu() }></button>                                     
+         </div>
+         <nav>
+               <ul>
                   <li>
-                     <Link to='/' id="home" className='home active'>
-                        Home
-                     </Link>
+                     <Link to='/'>Home</Link>
                   </li>
                   <li>
-                     <Link to='/About' id="about" className='about'>About</Link>
+                     <Link to='/About'>About</Link>
                   </li>
                   <li>
-                     <Link to='/Footer' id="footer" className='footer'>Footer</Link> 
+                     <Link to='/Footer'>Footer</Link> 
                   </li>
-               </ul>           
-            </nav>
-            <button className="trigger" aria-label="navigation menu toggle"></button>        
-         </div>  
+               </ul>
+               <ul className="symbols">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>              
+         </nav>  
       </div>               
    </header>
   );

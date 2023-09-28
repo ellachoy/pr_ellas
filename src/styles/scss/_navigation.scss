@@ -4,18 +4,24 @@
 @use './mixins/breakpoint' as breakpoint;
 @use './mixins/hover-focus' as hover-focus;
 
-.nav-bar {
-  width: 100%;
+nav {
+  display: none;
   font: {
-    size: clamp(16px, 1.5vw, 24px);
+    size: clamp(24px, 2vw, 36px);
+    family: typo.$font-family-secondary;
   }
-  .nav-menu {
-    display: none;
+  padding: {
+    block: {
+      start: 5rem;
+    }
+  }
+  ul {
+    display: flex;
     flex: {
       direction: column;
     }
-    gap: 16px;
-    text-align: center;
+    gap: 48px;
+    text-align: end;
     a {
       color: colors.$white-inactive;
       padding: {
@@ -37,12 +43,84 @@
     }
   }
   @include breakpoint.large-breakpoint {
-    width: unset;
-    .nav-menu {
-      display: flex;
-      flex: {
-        direction: row;
+    //width: unset;
+  }
+  &::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    background: {
+      color: transparent;
+    }
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1.25s ease-in-out;
+  }
+  .symbols {
+    li {
+      &:first-child {
+        top: 50%;
+      }
+      &:nth-child(2) {
+        top: 70%;
+      }
+      &:last-child {
+        bottom: -35%;
+        right: 20%;
       }
     }
+  }
+}
+
+.trigger {
+  &::before,
+  &::after {
+    content: '';
+    height: 4px;
+    width: 30px;
+    display: block;
+    font-size: 16px;
+    margin: {
+      block: {
+        start: 6px;
+        end: 6px;
+      }
+      inline: {
+        start: auto;
+        end: auto;
+      }
+    }
+    background: {
+      color: colors.$white-inactive;
+    }
+    transition: {
+      property: color, background-color, transform;
+      duration: 0.5s;
+      timing-function: ease-in-out;
+    }
+  }
+  &::before {
+    transform: translateY(0) rotate(0);
+    transition: transform 1.25s cubic-bezier(0.5, 0.2, 0.2, 1),
+      background-color 1.25s ease;
+  }
+  &::after {
+    transform: translateY(0) rotate(0);
+    transition: transform 1.25s cubic-bezier(0.5, 0.2, 0.2, 1),
+      background-color 1.25s ease;
+  }
+  @include hover-focus.hover-focus-state {
+    &::after,
+    &::before {
+      background: {
+        color: colors.$white;
+      }
+    }
+  }
+  @include breakpoint.large-breakpoint {
+    //display: none;
   }
 }
