@@ -11,7 +11,7 @@ export default function Skills() {
                  title='Skills'
                  description='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'               
                 />            
-                <ul class="skills-list">
+                <ul className="skills-list">
                     <SkillsList
                         headline='HTML'
                         description='Umgang mit semantischem HTML5/ barrierefreien Markup / Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quas quae beatae. Obcaecati unde magnam delectus nobis officia ratione nisi ea nostrum. Esse, porro. Suscipit sit ab aperiam. Tempore, iusto!'

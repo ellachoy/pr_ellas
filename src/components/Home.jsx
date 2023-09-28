@@ -11,12 +11,12 @@ export default function Home() {
                     Frontend Web Entwicklung ist,
                 </span>                
               </div>
-              <div class="phrase">
+              <div className="phrase">
                     <span>Syzygy von Digitale Kommunikation,</span>
                     <span> Kunst und Technologie</span>
                 </div>  
             </h1>
-            <ul class="symbols">
+            <ul className="symbols">
                 <li></li>
                 <li></li>
                 <li></li>
