@@ -1,18 +1,20 @@
 import React from 'react';
-import Navigation from './components/Navigation';
+
+import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 
 import './index.scss'
 
+
 export default function App() {
   return (
     <>
-      <Navigation/>
+      <Header />
       <Home />
       <About />
-      <Skills />
-    </>
-    );
+      <Skills />   
+    </>       
+  );
 }

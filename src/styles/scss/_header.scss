@@ -48,12 +48,8 @@ header {
 }
 
 .logo {
-  max: {
-    width: 7.5rem;
-    height: 3.125rem;
-  }
   font: {
-    size: clamp(28px, 2vw, 36px);
+    size: clamp(32px, 2vw, 42px);
     weight: map.get(typo.$font-weights, 'regular');
   }
   padding: {
