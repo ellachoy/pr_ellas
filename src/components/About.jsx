@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Content from './elements/_content';
 import List from './elements/_list';
 
@@ -9,7 +10,7 @@ export default function About() {
         <div className="container">
           <div className="content">
             <Content
-              title='About ME'
+              title='About Me'
               intro='Was ich wichtige Punkte über Frontend web Entwicklung halte,' 
               quote='Ich bin Junior Frontend Webentwicklerin. Ich bin .... Ich bin offen
                 dafür, verschiedene Technologien zu erlernen und sie selbst zu beurteilen. Investiere immer noch
@@ -32,8 +33,33 @@ export default function About() {
                title= 'Aktive Lernen'
                description= 'Schokolade fallt nicht aus dem Himmel! immer raschachieren nach neues'
             />
-        </ul>
+          </ul>
         </div>
+        <div className="job-info">
+          <Content
+              title= 'Berufserfahrung'    
+          />
+          <ul>            
+            <li>
+              <Content
+                description='Ryze Digital (Electronic-Minds) als Junior Frontend Web Entwickler'
+                subText='Mai 2022 - heute'      
+              />
+            </li>
+            <li>
+              <Content
+                description='Jato Dynamics als Automotive Data Analyst'
+                subText='Jun 2018 - März 2021'      
+              />
+            </li>
+            <li>
+              <Content
+                description='Hyundai Mobis als Automotive Data Analyst'
+                subText='Dez 2013 - Juni 2017'      
+              />
+            </li>
+          </ul>         
+        </div>      
       </div>
     </section>
   );

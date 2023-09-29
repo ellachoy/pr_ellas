@@ -21,7 +21,7 @@ nav {
       direction: column;
     }
     gap: 48px;
-    text-align: end;
+    text-align: center;
     a {
       color: colors.$white-inactive;
       padding: {
@@ -65,7 +65,7 @@ nav {
         top: 50%;
       }
       &:nth-child(2) {
-        top: 70%;
+        top: 80%;
       }
       &:last-child {
         bottom: -35%;

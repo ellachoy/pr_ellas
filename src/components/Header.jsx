@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {Route, Link, Routes} from 'react-router-dom';
-import Skills from './Skills';
-import About from './About';
-import Home from './Home';
+import {Link} from 'react-router-dom';
+
 import Symbols from './elements/_symbols-list';
 
 
@@ -55,12 +53,7 @@ export default function Header() {
                   </li>
                </ul>
                <Symbols />    
-         </nav>
-         <Routes>
-            <Route path="/" component={<Home />} />
-            <Route path="/about" component={<About />} />
-            <Route path="/skills" component={<Skills />} />
-        </Routes>  
+         </nav>        
       </div>               
    </header>
   );

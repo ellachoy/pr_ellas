@@ -106,45 +106,42 @@ p {
   }
 }
 
+.sub-text {
+  font: {
+    size: clamp(14px, 1vw, 16px);
+  }
+
+}
+
 .title-label {
   color: colors.$secondary;
 }
 
 blockquote {
   position: relative;
-  z-index: -1;
-  margin: {
+  padding: {
     block: {
-      start: 2.5rem;
-      end: 2em;
+      start: 3rem;
+      end: 3rem;
     }
   }
+  z-index: -1;
   > p {
     font-style: italic;
-    &::before,
-    &::after {
+    &::before {
+      content: open-quote;
       font: {
-        size: 48px;
+        family: 'Georgia';
+        size: 4em;
         weight: bold;
       }
       color: colors.$primary-quote;
       position: absolute;
-    }
-    &::before {
-      content: '\201C';
-      top: -10%;
-      left: -3%;
+      top: 0px;
+      left: -35px;
       margin: {
         inline: {
-          end: 5px;
-        }
-      }
-    }
-    &::after {
-      content: '\201D';
-      margin: {
-        inline: {
-          start: 5px;
+          //end: 5px;
         }
       }
     }
