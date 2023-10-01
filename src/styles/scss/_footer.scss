@@ -1,0 +1,77 @@
+@use './colors';
+@use './mixins/hover-focus' as hover-focus;
+
+.page-footer {
+  position: relative;
+  background: {
+    color: colors.$black;
+  }
+  width: 100%;
+  padding: {
+    block: {
+      start: 2.5rem;
+      end: 2.5rem;
+    }
+  }
+  .container {
+    gap: 16px 28px;
+  }
+}
+
+.contact {
+  a {
+    color: colors.$white-inactive;
+    transition: transform 0.33s ease-in-out, color 0.33s ease-in-out;
+    @include hover-focus.hover-focus-state() {
+      color: colors.$white;
+      &::after {
+        left: 100%;
+        transform: translate3d(50%, 0, 0);
+        transition: transform 0.4s ease-out, left 0.4s ease-out;
+      }
+    }
+    &.has-icon {
+      svg {
+        font-size: 2.5rem;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 29px;
+      top: -20px;
+      bottom: 0;
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.15),
+        rgba(204, 204, 204, 0.05)
+      );
+      width: 1.5rem;
+      height: 2.5rem;
+      transform: translate3d(-150%, 0, 0);
+      transition: none;
+      backface-visibility: hidden;
+    }
+  }
+  &.container {
+    margin: {
+      block: {
+        start: 2rem;
+        end: 2.5rem;
+      }
+    }
+  }
+}
+
+.divide {
+  padding: {
+    block: {
+      start: 2rem;
+    }
+  }
+  border-top: 1px solid #666262;
+}
+
+.copyright {
+  color: colors.$white;
+}
