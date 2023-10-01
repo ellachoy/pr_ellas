@@ -5683,6 +5683,7 @@ __metadata:
     react: ^18.2.0
     react-anchor-link-smooth-scroll: ^1.0.12
     react-dom: ^18.2.0
+    react-external-link: ^2.2.0
     react-icons: ^4.11.0
     react-router-dom: ^6.16.0
     react-scripts: 5.0.1
@@ -11497,6 +11498,16 @@ __metadata:
   version: 6.0.11
   resolution: "react-error-overlay@npm:6.0.11"
   checksum: ce7b44c38fadba9cedd7c095cf39192e632daeccf1d0747292ed524f17dcb056d16bc197ddee5723f9dd888f0b9b19c3b486c430319e30504289b9296f2d2c42
+  languageName: node
+  linkType: hard
+
+"react-external-link@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "react-external-link@npm:2.2.0"
+  peerDependencies:
+    react: ^17.0 || ^18.0
+    react-dom: ^17.0 || ^18.0
+  checksum: 463b012d00852088e5f9de82ebec9124c7dc73d4dedb2132463de03d7170d9ef22e91ffae9d8b97b752ca71c12457461f753c341b8f79f4da03cb91f083e7490
   languageName: node
   linkType: hard
 
