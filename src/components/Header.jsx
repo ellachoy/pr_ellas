@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Link} from 'react-router-dom';
 
-import Symbols from './elements/_symbols-list';
+import Symbols from './elements/symbols-list';
 
 
 export default function Header() {

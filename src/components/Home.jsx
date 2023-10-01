@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import Symbols from './elements/_symbols-list';
+import Symbols from './elements/symbols-list';
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
