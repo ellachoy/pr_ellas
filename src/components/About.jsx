@@ -1,7 +1,8 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import Content from './elements/_content';
-import List from './elements/_list';
+import { ExternalLink } from 'react-external-link';
+import Content from './elements/content';
+import about from '../content/aboutContent';
+import jobInfo from '../content/jobInfoContent';
 
 export default function About() {
   return (
@@ -21,43 +22,30 @@ export default function About() {
             />
           </div>       
           <ul className="lists panel">
-            <List
-               title= 'Kommunikation'
-               description= 'duch Kommunikakation, minimiert fehler und spart Zeit '
-            />
-            <List
-               title= 'Starke Mental'
-               description= 'Fokusiere ich auf meine tägliche Entwicklung!. alles sind nicht perfekt'
-            />
-            <List
-               title= 'Aktive Lernen'
-               description= 'Schokolade fallt nicht aus dem Himmel! immer raschachieren nach neues'
-            />
+            {about.map((about, index) => (
+              <li key={index}>
+                <div>
+                  <h3 className="headline h4">{about.title}</h3>
+                  <p>{about.description}</p>
+                </div> 
+              </li>
+            ))}       
           </ul>
         </div>
         <div className="job-info">
           <Content
               title= 'Berufserfahrung'    
           />
-          <ul>            
-            <li>
-              <Content
-                description='Ryze Digital (Electronic-Minds) als Junior Frontend Web Entwickler'
-                subText='Mai 2022 - heute'      
-              />
-            </li>
-            <li>
-              <Content
-                description='Jato Dynamics als Automotive Data Analyst'
-                subText='Jun 2018 - März 2021'      
-              />
-            </li>
-            <li>
-              <Content
-                description='Hyundai Mobis als Automotive Data Analyst'
-                subText='Dez 2013 - Juni 2017'      
-              />
-            </li>
+          <ul>                     
+            {jobInfo.map((jobInfo, index) =>(
+              <li key={index}>
+                <ExternalLink href={jobInfo.path}>
+                  <p className="description">{jobInfo.companyName}</p>
+                </ExternalLink>
+                <p className= "job-title">{jobInfo.title}</p>
+                <p className="sub-text" > {jobInfo.subText}</p>
+              </li>
+            ))}    
           </ul>         
         </div>      
       </div>
