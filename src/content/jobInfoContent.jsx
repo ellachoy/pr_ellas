@@ -1,7 +1,7 @@
 const jobInfo = [
     {
         path:"http://www.ryze-digital.de",
-        companyName: 'Ryze Digital (Electronic-Minds)Deutschland GmbH',
+        companyName: 'Ryze Digital (Electronic-Minds) Deutschland GmbH',
         title:'als Junior Frontend Web Entwickler',
         subText:'Mai 2022 - heute'      
     },
@@ -16,6 +16,12 @@ const jobInfo = [
         companyName: 'Hyundai Mobis Parts Europe N.V. Branch Germany',
         title:'als Automotive Data Analyst',
         subText:'Dez 2013 - Juni 2017' 
+    },
+     {
+        path:"https://www.lg.com/de/business/fahrzeugteile",
+        companyName: 'LG ELECTRONICS Vehicle components Europe GmbH',
+        title:'Controlling',
+        subText:'Juli 2012 - Nov 2013' 
     },
 
 ];
