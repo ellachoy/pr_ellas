@@ -46,37 +46,4 @@
       }
     }
   }
-  .job-info {
-    font: {
-      weight: bold;
-    }
-    padding: {
-      block: {
-        start: 12rem;
-      }
-    }
-    ul {
-      .description {
-        display: flex;
-        flex-direction: row;
-        gap: 16px;
-        text-decoration: underline;
-        color: initial;
-        &::before {
-          content: '';
-          border: colors.$primary 2px solid;
-          height: 28px;
-        }
-      }
-      .job-title,
-      .sub-text {
-        font-weight: normal;
-        margin: {
-          inline: {
-            start: 20px;
-          }
-        }
-      }
-    }
-  }
 }

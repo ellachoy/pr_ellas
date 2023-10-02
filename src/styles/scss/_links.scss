@@ -1,15 +1,20 @@
 @use './colors';
 
 a {
-    position: relative;
-    text: {
-        decoration:none;
-    }
-    outline: none;
-    cursor: pointer;
-    transition: {
-        property: color, background-color;
-        duration: 0.5s;
-        timing-function: ease-in-out;
-    };
+  position: relative;
+  text: {
+    decoration: none;
+  }
+  outline: none;
+  cursor: pointer;
+  transition: {
+    property: color, background-color;
+    duration: 0.5s;
+    timing-function: ease-in-out;
+  }
+}
+
+[rel*='noopener'] {
+  text-decoration: underline;
+  text-decoration-color: grey;
 }

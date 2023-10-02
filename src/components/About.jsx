@@ -32,7 +32,7 @@ export default function About() {
             ))}       
           </ul>
         </div>
-        <div className="job-info">
+        <div className="add-info">
           <Content
               title= 'Berufserfahrung'    
           />
@@ -40,9 +40,9 @@ export default function About() {
             {jobInfo.map((jobInfo, index) =>(
               <li key={index}>
                 <ExternalLink href={jobInfo.path}>
-                  <p className="description">{jobInfo.companyName}</p>
+                  <h6 className="h6 headline">{jobInfo.companyName}</h6>
                 </ExternalLink>
-                <p className= "job-title">{jobInfo.title}</p>
+                <p className= "sub-title">{jobInfo.title}</p>
                 <p className="sub-text" > {jobInfo.subText}</p>
               </li>
             ))}    

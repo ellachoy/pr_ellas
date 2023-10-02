@@ -49,6 +49,9 @@ export default function Header() {
                      <AnchorLink href='#skills' onClick={hide} onBlur={hide} onFocus={show}>Skills</AnchorLink>
                   </li>
                   <li>
+                     <AnchorLink href='#project' onClick={hide} onBlur={hide} onFocus={show}>Skills</AnchorLink>
+                  </li>
+                  <li>
                      <AnchorLink href='#footer' onClick={hide} onBlur={hide} onFocus={show}>Footer</AnchorLink> 
                   </li>
                </ul>

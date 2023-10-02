@@ -35,3 +35,49 @@ ul {
     }
   }
 }
+
+.add-info {
+  font: {
+    weight: bold;
+  }
+  padding: {
+    block: {
+      start: 12rem;
+    }
+  }
+  ul {
+    display: flex;
+    flex: {
+      direction: column;
+    }
+    gap: 21px;
+    .headline {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      color: initial;
+      margin: {
+        block: {
+          end: unset;
+        }
+      }
+      &::before {
+        content: '';
+        border: colors.$primary 2px solid;
+        height: 28px;
+      }
+    }
+    .sub-title,
+    .sub-text {
+      font-weight: normal;
+      margin: {
+        inline: {
+          start: 20px;
+        }
+      }
+    }
+    .sub-text {
+      color: grey;
+    }
+  }
+}

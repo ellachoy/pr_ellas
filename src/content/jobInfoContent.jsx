@@ -14,7 +14,7 @@ const jobInfo = [
     {
         path:"https://www.mobisparts.eu/",
         companyName: 'Hyundai Mobis Parts Europe N.V. Branch Germany',
-        title:' als Automotive Data Analyst',
+        title:'als Automotive Data Analyst',
         subText:'Dez 2013 - Juni 2017' 
     },
 
