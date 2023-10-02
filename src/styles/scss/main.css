@@ -61,7 +61,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-[rel*=noopener] {
+[href] {
   text-decoration: underline;
   text-decoration-color: grey;
 }
