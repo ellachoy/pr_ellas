@@ -61,7 +61,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-[href] {
+[rel*=noopener] {
   text-decoration: underline;
   text-decoration-color: grey;
 }
@@ -405,8 +405,8 @@ button {
   position: relative;
   margin-block-start: 18px;
   border-radius: 50%;
-  --symbole-width: clamp(18rem, 4vw, 35rem);
-  --symbole-height: clamp(18rem, 4vw, 35rem);
+  --symbole-width: clamp(18em, 4vw, 35em);
+  --symbole-height: clamp(18em, 4vw, 35em);
 }
 .about .lists div {
   color: #ffffff;
@@ -425,11 +425,11 @@ button {
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 27px), 0 100%);
   color: #ffffff;
 }
-.skills.is-in-viewport li:nth-child(odd) .container {
+.skills .is-in-viewport li:nth-child(odd) .container {
   transform: translateX(0);
   opacity: 1;
 }
-.skills.is-in-viewport li:nth-child(even) .container {
+.skills .is-in-viewport li:nth-child(even) .container {
   transform: translateX(0);
   opacity: 1;
 }
@@ -472,6 +472,14 @@ button {
   .skills li .container {
     flex-direction: row;
   }
+}
+.skills li:nth-child(odd) .container {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.skills li:nth-child(even) .container {
+  transform: translateX(-100%);
+  opacity: 0;
 }
 .skills li .headline {
   min-width: 8rem;

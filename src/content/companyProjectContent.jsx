@@ -12,16 +12,19 @@ const companyProject = [
         subText: "Dez 2022 - März 2023",
     },
     {
+        path: "/",
         headline: "Diehl Group-Intranet",
         subTitle: "Intranet Nacharbeitung",
         subText: "Sep 2023 - Sep 2023",
     },
     {
+        path: "/",
         headline: "Ribe Group-Intranet",
         subTitle: "Intranet Nacharbeitung",
         subText: "Sep 2023 - Sep 2023",
     },
     {
+        path: "/",
         headline: "CAFEA-Group-Intranet",
         subTitle: "Intranet Relaunch",
         subText: "April 2023 - heute",

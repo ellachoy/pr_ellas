@@ -1,13 +1,13 @@
 @use './mixins/breakpoint' as breakpoint;
 @use './colors';
 
-.skills{
+.skills {
   background: {
     color: colors.$black;
   }
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 27px), 0 100%);
   color: colors.$white;
-  &.is-in-viewport {
+  .is-in-viewport {
     li {
       &:nth-child(odd) {
         .container {
@@ -72,16 +72,16 @@
     }
     &:nth-child(odd) {
       .container {
-        //-webkit-transform: translateX(100%);
-        //transform: translateX(100%);
-        //opacity: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 0;
       }
     }
     &:nth-child(even) {
       .container {
-        //-webkit-transform: translateX(-100%);
-        //transform: translateX(-100%);
-        //opacity: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        opacity: 0;
       }
     }
     .headline {
