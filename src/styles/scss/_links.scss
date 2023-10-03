@@ -14,7 +14,7 @@ a {
   }
 }
 
-[href] {
+[rel*="noopener"] {
   text-decoration: underline;
   text-decoration-color: grey;
 }

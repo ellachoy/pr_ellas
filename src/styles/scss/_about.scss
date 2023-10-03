@@ -28,8 +28,8 @@
         }
       }
       border-radius: 50%;
-      --symbole-width: clamp(18rem, 4vw, 35rem);
-      --symbole-height: clamp(18rem, 4vw, 35rem);
+      --symbole-width: clamp(18em, 4vw, 35em);
+      --symbole-height: clamp(18em, 4vw, 35em);
     }
     div {
       color: colors.$white;
