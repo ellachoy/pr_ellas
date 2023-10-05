@@ -44,15 +44,19 @@ export default function Slider() {
                         <ExternalLink href={slide.path}>
                             <div className="image">
                                 <img src={slide.image} loading="lazy" alt="sliderImage" className="image" />
-                            </div>   
+                            </div>
+                            <h4 className="h5">{slide.label}</h4>   
                     </ExternalLink>
                     <div>
-                        <h4 className="h5">{slide.label}</h4>
                         <p>{slide.text}</p>
-                        <p>{slide.subText}</p>                      
+                        <p>{slide.subText}</p>
+                        <ExternalLink href={slide.gitpath} className='more'>
+                            <span className='sub-text'>GitHub Repository</span>
+                        </ExternalLink>
+                                                                 
                     </div>                                
                 </SwiperSlide> 
-            ))}                      
+            ))}                   
         </Swiper>   
       </div>
     )

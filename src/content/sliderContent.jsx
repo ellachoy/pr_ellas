@@ -1,15 +1,16 @@
 import {BsGithub} from 'react-icons/bs';
-import ellas from '../imgs/pr_ellas.jpeg';
+import ellas from '../imgs/pr_ellas2.jpg';
 import ella2022 from '../imgs/pr_ella.jpg';
 import follow from '../imgs/follow.jpeg';
 
 const SliderContent = [
     {
-        path: "#",
+        path: "https://dashing-semifreddo-d6bc58.netlify.app/",
         image: ellas,
         label: "Ella´s Choice",
-        text: "Skills: ReactJs, SASS",
-        subText: "Bewerbungsprojekt 2023",
+        text: "Bewerbungsprojekt 2023",
+        subText: "Skills: React, Sass",
+        gitpath: "https://github.com/ellachoy/pr_ellas",
         icon: {BsGithub},
     },
     {
@@ -18,6 +19,7 @@ const SliderContent = [
         label: "Dream coader",
         text: "Skills: HTML, CSS, JS",
         subText: "Bewerbungsprojekt aus 2022 ",
+        gitpath: "#",
         icon: {BsGithub},
     },
     {
@@ -26,6 +28,7 @@ const SliderContent = [
         label: "007 (Follow the target)",
         text: "Skills: ReactJs, CSS",
         subText: "side projekt",
+        gitpath: "#",
         icon: {BsGithub},
     },
    
