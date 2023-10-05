@@ -2,6 +2,8 @@ import React from 'react';
 import { ExternalLink } from 'react-external-link';
 import Content from './elements/content';
 import companyProject from '../content/companyProjectContent';
+import Slider from './Slider';
+
 
 export default function Project() {
     return (
@@ -10,8 +12,9 @@ export default function Project() {
                 <Content
                     title='Projekte'               
                 />
+               <Slider />
                 <div className="add-info join-projects">
-                     <Content
+                    <Content
                         title='Beteiligte Firmen Projekte'               
                     />
                     <ul>

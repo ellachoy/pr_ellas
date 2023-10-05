@@ -1,3 +1,7 @@
+:root {
+  --swiper-theme-color: #cd9c0a;
+}
+
 header {
   background-color: #000000;
   z-index: 5;
@@ -681,19 +685,6 @@ blockquote > p::before {
 .contact a.has-icon svg {
   font-size: 2.5rem;
 }
-.contact a::after {
-  content: "";
-  position: absolute;
-  left: 29px;
-  top: -20px;
-  bottom: 0;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(204, 204, 204, 0.05));
-  width: 1.5rem;
-  height: 2.5rem;
-  transform: translate3d(-150%, 0, 0);
-  transition: none;
-  backface-visibility: hidden;
-}
 .contact.container {
   margin-block-start: 2rem;
   margin-block-end: 2.5rem;
@@ -706,6 +697,56 @@ blockquote > p::before {
 
 .copyright {
   color: #ffffff;
+}
+
+.slider .swiper-wrapper img {
+  margin-block-end: clamp(8px, 2vw, 36px);
+}
+.slider .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-block-start: 2rem;
+  padding-block-end: 3.5rem;
+}
+.slider .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #cd9c0a;
+  top: initial;
+  bottom: 10%;
+  font-size: 25px;
+  width: 0px;
+  height: 0px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 25px;
+}
+
+.swiper-button-prev {
+  left: 90%;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #cd9c0a;
+}
+
+.image {
+  background-color: #f4f4f4;
+  aspect-ratio: var(--aspect-ratio, 16/9);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  aspect-ratio: var(--aspect-ratio, 16/9);
 }
 
 * {

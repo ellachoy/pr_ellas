@@ -35,23 +35,6 @@
         font-size: 2.5rem;
       }
     }
-    &::after {
-      content: '';
-      position: absolute;
-      left: 29px;
-      top: -20px;
-      bottom: 0;
-      background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.15),
-        rgba(204, 204, 204, 0.05)
-      );
-      width: 1.5rem;
-      height: 2.5rem;
-      transform: translate3d(-150%, 0, 0);
-      transition: none;
-      backface-visibility: hidden;
-    }
   }
   &.container {
     margin: {
