@@ -1,4 +1,5 @@
 @use './colors';
+@use './mixins/hover-focus' as hover-focus;
 
 a {
   position: relative;
@@ -8,13 +9,19 @@ a {
   outline: none;
   cursor: pointer;
   transition: {
-    property: color, background-color;
+    property: color, background-color, text-decoration-color,
+      text-decoration-thickness;
     duration: 0.5s;
     timing-function: ease-in-out;
   }
 }
 
-[rel*="noopener"] {
+[rel*='noopener'] {
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
   text-decoration-color: grey;
+  @include hover-focus.hover-focus-state {
+    text-decoration-color: colors.$primary;
+  }
 }

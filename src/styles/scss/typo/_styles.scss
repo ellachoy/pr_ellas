@@ -110,7 +110,7 @@ p {
   font: {
     size: clamp(14px, 1vw, 16px);
   }
-
+  color: colors.$sub-text;
 }
 
 .title-label {

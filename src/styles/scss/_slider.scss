@@ -13,10 +13,8 @@
         end: 3.5rem;
       }
     }
-    img {
-      display: block;
-      width: 100%;
-      object-fit: cover;
+    [href] {
+      color: initial;   
     }
   }
 }
