@@ -42,7 +42,9 @@ export default function Slider() {
             {SliderContent.map((slide, index)=> (
                 <SwiperSlide key={index}>                  
                         <ExternalLink href={slide.path}>
-                        <img src={slide.image} loading="lazy" alt="sliderImage" className="image" />
+                            <div className="image">
+                                <img src={slide.image} loading="lazy" alt="sliderImage" className="image" />
+                            </div>   
                     </ExternalLink>
                     <div>
                         <h4 className="h5">{slide.label}</h4>

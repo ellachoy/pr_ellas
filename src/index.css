@@ -103,7 +103,7 @@ ul {
 
 .add-info {
   font-weight: bold;
-  padding-block-start: 12rem;
+  padding-block-start: 8rem;
 }
 .add-info ul {
   display: flex;
@@ -425,8 +425,6 @@ button {
 
 .skills {
   background-color: #000000;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 27px), 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 27px), 0 100%);
   color: #ffffff;
 }
 .skills .is-in-viewport li:nth-child(odd) .container {
@@ -699,9 +697,6 @@ blockquote > p::before {
   color: #ffffff;
 }
 
-.slider .swiper-wrapper img {
-  margin-block-end: clamp(8px, 2vw, 36px);
-}
 .slider .swiper-slide {
   display: flex;
   flex-direction: column;
@@ -713,6 +708,8 @@ blockquote > p::before {
 .slider .swiper-slide img {
   display: block;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-button-prev,
@@ -739,6 +736,7 @@ blockquote > p::before {
 
 .image {
   background-color: #f4f4f4;
+  margin-block-end: clamp(8px, 2vw, 36px);
   aspect-ratio: var(--aspect-ratio, 16/9);
 }
 

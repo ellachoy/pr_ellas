@@ -2,52 +2,43 @@
 @use './mixins/breakpoint' as breakpoint;
 
 .slider {
-  .swiper-wrapper {
-    img {
-      margin: {
-        block: {
-          end: clamp(8px, 2vw, 36px);
-        }
-      }
-    }
-  }
   .swiper-slide {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     position: relative;
     padding: {
-        block: {
-            start: 2rem;
-            end: 3.5rem;
-        }
+      block: {
+        start: 2rem;
+        end: 3.5rem;
+      }
+    }
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
     }
   }
-  .swiper-slide img {
-        display: block;
-        width: 100%;
-    }
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: colors.$primary;
-    top: initial;
-    bottom: 10%;
+  color: colors.$primary;
+  top: initial;
+  bottom: 10%;
+  font-size: 25px;
+  width: 0px;
+  height: 0px;
+  &::after {
     font-size: 25px;
-    width: 0px;
-    height: 0px;
-    &::after {
-        font-size: 25px;
-    }
+  }
 }
 .swiper-button-prev {
-    left: 90%;
+  left: 90%;
 }
 
 .swiper-scrollbar-drag {
-    background: {
-        color: colors.$primary;
-    }
+  background: {
+    color: colors.$primary;
+  }
 }

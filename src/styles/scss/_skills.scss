@@ -5,7 +5,6 @@
   background: {
     color: colors.$black;
   }
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 27px), 0 100%);
   color: colors.$white;
   .is-in-viewport {
     li {

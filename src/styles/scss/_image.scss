@@ -4,15 +4,11 @@
   background: {
     color: colors.$grey-light;
   }
-  max: {
-    //width: 430px;
-    //height: 241px;
-  }
-  min: {
-    //width: 342px;
-    //height: 192px;
-  }
-
+  margin: {
+        block: {
+          end: clamp(8px, 2vw, 36px);
+        }
+      }
   aspect-ratio: var(--aspect-ratio, 16/9);
 }
 
