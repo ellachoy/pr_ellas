@@ -13,7 +13,7 @@ export default function Skills() {
                     <div className="wrapper">
                         <Content
                             title='Skills'
-                            description='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'            
+                            description='TEST'            
                         />            
                         <ul className="skills-list">
                             {skills.map((skill, index) => (
