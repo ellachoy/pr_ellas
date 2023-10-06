@@ -45,11 +45,11 @@ export default function Slider() {
                             <div className="image">
                                 <img src={slide.image} loading="lazy" alt="sliderImage" className="image" />
                             </div>
-                            <h4 className="h5">{slide.label}</h4>   
+                            <h4 className="h3">{slide.label}</h4>   
                     </ExternalLink>
                     <div>
                         <p>{slide.text}</p>
-                        <p>{slide.subText}</p>
+                        <h5 className="h6">{slide.subText}</h5>
                         <ExternalLink href={slide.gitpath} className='more'>
                             <span className='sub-text'>GitHub Repository</span>
                         </ExternalLink>
