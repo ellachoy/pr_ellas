@@ -19,7 +19,7 @@ const jobInfo = [
     },
      {
         path:"https://www.lg.com/de/business/fahrzeugteile",
-        companyName: 'LG ELECTRONICS Vehicle components Europe GmbH',
+        companyName: 'LG Electronics Vehicle components Europe GmbH',
         title:'Controlling',
         subText:'Juli 2012 - Nov 2013' 
     },
