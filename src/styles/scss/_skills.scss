@@ -68,7 +68,8 @@
     .container {
       flex-wrap: unset;
       align-items: baseline;
-      transition: transform 1.2s ease-out, -webkit-transform 1.2s ease-out;
+      transition: transform 2s ease-out, -webkit-transform 2s ease-out,
+        opacity 5s ease-out;
       gap: 0 16px;
       flex-direction: column;
       @include breakpoint.large-breakpoint {
