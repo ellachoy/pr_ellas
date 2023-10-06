@@ -4,7 +4,7 @@ const skills = [
         description: 'Umgang mit semantischem HTML5/ barrierefreien Markup',
     },
     {
-        headline: 'CSS/SASS',
+        headline: 'CSS/SCSS',
         description: 'Praktische Erfahrung im Schreiben von CSS mittels Dart sass/ Umsetzung nicht für Mobile First sondern für alle Viewport',
     },
     {
@@ -17,7 +17,7 @@ const skills = [
     },
     {
         headline: 'Tools',
-        description: 'Microsoft Teams/ Jira /Confluence / Trello/ Figma / GitLab /gitHub / Yarn / Npm/ BrowserStack/ Git/ VSCode/ IDE-PHPStorm/ Anbindung von Website an CMS system (bis her hauseigenes CMS System) ',
+        description: 'Microsoft Teams / Jira / Confluence / Trello/ Figma / GitLab / GitHub / Yarn / Npm/ BrowserStack / Git / VSCode / IDE-PHPStorm / CMS system (bis her hauseigenes CMS System) ',
     },
 ];
 
