@@ -19,7 +19,7 @@ const SliderContent = [
         label: "Dream coader",
         text: "Skills: HTML, CSS, JS",
         subText: "Bewerbungsprojekt aus 2022 ",
-        gitpath: "#",
+        gitpath: "https://github.com/ellachoy/Ella_Portfolio",
         icon: {BsGithub},
     },
     {
@@ -28,7 +28,7 @@ const SliderContent = [
         label: "007 (Follow the target)",
         text: "Skills: ReactJs, CSS",
         subText: "side projekt",
-        gitpath: "#",
+        gitpath: "https://github.com/ellachoy/pr_follow",
         icon: {BsGithub},
     },
    
