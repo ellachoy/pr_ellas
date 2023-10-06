@@ -15,6 +15,9 @@ Ich habe keine Berufserfahrung mit React. aber da ich im Jahr 2021 React kenneng
 - react-slider-swiper
 - node-sass
 
+### weiteren Plan
+- Einbinden mit Musik (Sound)
+
 
 
 
