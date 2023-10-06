@@ -16,7 +16,7 @@ export default function About() {
               quote='Ich bin Ella und Junior Frontend Webentwicklerin. Ich brenne seit 2021 als Quereinsteigerin Frontend Web Entwicklung an.
                   Ich bin offen dafür, verschiedene Technologien zu erlernen, welche für meine Arbeit relevant sind. Investiere 
                 gerne Zeit in die Recherche. „Der Wunsch, mehr zu lernen nach dem Motto heute baue ich noch tolles als gestern“.
-                durch langjährigen Berufserfahrung in einem anderen bereich, mir ist bewusst, "Kommunikation", "Starke Metal zu besitzen" und "Aktive Lernen"
+                durch langjährigen Berufserfahrung in Automobil Branche, mir ist bewusst, "Kommunikation", "Starke Metal zu besitzen" und "Aktive Lernen"
                 tolle Synergie macht für meine Arbeit.
              '           
             />
