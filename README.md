@@ -4,7 +4,7 @@ Link (https://dashing-semifreddo-d6bc58.netlify.app/).
 
 ## Ziel
 
-Ich habe keine Berufserfahrung mit React. aber da ich 2021 React kennengelernt hatte, wollte mein Wissen über React erfrischen und weiter entwickeln
+Ich habe keine Berufserfahrung mit React. aber da ich im Jahr 2021 React kennengelernt hatte, wollte mein Wissen über React erfrischen und weiter entwickeln
 
 ### Skills
 - create-react-app (react)
