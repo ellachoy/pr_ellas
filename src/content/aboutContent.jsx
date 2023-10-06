@@ -1,15 +1,15 @@
  const about = [
     {
         title: 'Kommunikation',
-        description: 'duch Kommunikakation, minimiert fehler und spart Zeit '
+        description: 'Kommunikation in Team, bringt beste Synergie, um bestes von Wert zu erschaffen '
     },
     {
          title: 'Starke Mental',
-        description: 'Fokusiere ich auf meine tägliche Entwicklung!. alle sind nicht perfekt'
+        description: 'Es gibt keine Sache, die ich nicht schaffen kann sondern die ich noch nicht versucht habe zu schaffen!'
     },
     {
         title: 'Aktive Lernen',
-        description: 'Schokolade fallt nicht aus dem Himmel! immer raschachieren nach neues'
+        description: 'Schokolade fallt nicht aus dem Himmel! immer am Lernen nach neues'
     },
 ];
 
