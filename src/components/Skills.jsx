@@ -13,7 +13,7 @@ export default function Skills() {
                     <div className="wrapper">
                         <Content
                             title='Skills'
-                            description='TEST'            
+                            intro='Folgende Skills sind, welche ich seit 2021 gelernt habe und noch beim Lernen zur Entwickeln sind'            
                         />            
                         <ul className="skills-list">
                             {skills.map((skill, index) => (
