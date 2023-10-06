@@ -16,7 +16,7 @@ Ich habe keine Berufserfahrung mit React. aber da ich im Jahr 2021 React kenneng
 - node-sass
 
 ### weiteren Plan
-- Einbinden mit Musik (Sound)
+- website verbessern mit entwickelten React Kentnissen
 
 
 
