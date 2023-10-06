@@ -49,7 +49,7 @@ export default function Slider() {
                     </ExternalLink>
                     <div>
                         <p>{slide.text}</p>
-                        <h5 className="h6">{slide.subText}</h5>
+                        <p>{slide.subText}</p>
                         <ExternalLink href={slide.gitpath} className='more'>
                             <span className='sub-text'>GitHub Repository</span>
                         </ExternalLink>
