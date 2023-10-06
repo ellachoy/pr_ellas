@@ -12,16 +12,12 @@ const skills = [
         description: 'Praktische Erfahrung von nativem Javascript/ Programmierung von nativen wiederverwendbaren JavaScript-Modulen',
     },
     {
+        headline: 'BasisKenntnisse',
+        description: 'PHP (mit Berufspraxis) / React  ',
+    },
+    {
         headline: 'Tools',
-        description: 'npm / Git/ vSCode/ IDE-PHPStorm/ Anbindung von Website an CMS system (bis her hauseigenes CMS System)',
-    },
-    {
-        headline: 'sonstiges',
-        description: 'BasisKenntnisse PHP/ Praktische Erfahrung mit Scrum / Confluence/ Jira/ ',
-    },
-    {
-        headline: 'etc',
-        description: 'Praktische Erfahrung von nativem Javascript/ Programmierung von nativen wiederverwendbaren JavaScript-Modulen ',
+        description: 'Microsoft Teams/ Jira /Confluence / Trello/ Figma / GitLab /gitHub / Yarn / Npm/ BrowserStack/ Git/ VSCode/ IDE-PHPStorm/ Anbindung von Website an CMS system (bis her hauseigenes CMS System) ',
     },
 ];
 

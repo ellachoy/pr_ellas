@@ -5,7 +5,7 @@
     },
     {
          title: 'Starke Mental',
-        description: 'Fokusiere ich auf meine tägliche Entwicklung!. alles sind nicht perfekt'
+        description: 'Fokusiere ich auf meine tägliche Entwicklung!. alle sind nicht perfekt'
     },
     {
         title: 'Aktive Lernen',

@@ -2,7 +2,7 @@ const jobInfo = [
     {
         path:"http://www.ryze-digital.de",
         companyName: 'Ryze Digital (Electronic-Minds) Deutschland GmbH',
-        title:'als Junior Frontend Web Entwickler',
+        title:'als Junior Frontend Web Entwicklerin',
         subText:'Mai 2022 - heute'      
     },
     {
