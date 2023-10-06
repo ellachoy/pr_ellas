@@ -1,7 +1,7 @@
 const companyProject = [
     {
         path: "https://www.klueber.com/de/de/",
-        headline: "Klüber Lubrication",
+        headline: "Klüber Lubrication /OKS ",
         subTitle: "Wartungsseite",
         subText: "Sep 2022 - Sep 2022",
     },
@@ -9,25 +9,25 @@ const companyProject = [
         path: "https://www.diehl.com/group/de/",
         headline: "Diehl Group",
         subTitle: "Website Relaunch",
-        subText: "Dez 2022 - März 2023",
+        subText: "Nov 2022 - Mai 2023",
     },
     {
         path: "/",
         headline: "Diehl Group-Intranet",
         subTitle: "Intranet Nacharbeitung",
-        subText: "Sep 2023 - Sep 2023",
+        subText: "Feb 2023 - Sep 2023",
     },
     {
         path: "/",
         headline: "Ribe Group-Intranet",
         subTitle: "Intranet Nacharbeitung",
-        subText: "Sep 2023 - Sep 2023",
+        subText: "Feb 2023 - Sep 2023",
     },
     {
         path: "/",
         headline: "CAFEA-Group-Intranet",
         subTitle: "Intranet Relaunch",
-        subText: "April 2023 - heute",
+        subText: "Mai 2023 - heute",
     },
 ];
 
