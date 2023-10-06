@@ -49,9 +49,10 @@
   }
 
   .phrase {
-    letter-spacing: 0.025em;
-    color: #666262bf;
-    -webkit-text-stroke: 2px rgb(244, 244, 236);
+    //letter-spacing: 0.025em;
+    //color: #666262bf;
+    //-webkit-text-stroke: 2px rgb(244, 244, 236);
+    font-weight: normal;
     margin: {
       block: {
         start: 1.5rem;
@@ -59,14 +60,16 @@
       }
     }
     &:first-child {
-      -webkit-text-stroke-color: colors.$white;
+      //-webkit-text-stroke-color: colors.$white;
+      color: colors.$white;
       -webkit-transform: translateY(100%);
       transform: translateY(100%);
       opacity: 0;
       transition: transform 2s ease, opacity 2s ease-out;
     }
     &:last-child {
-      -webkit-text-stroke-color: colors.$primary;
+      //-webkit-text-stroke-color: colors.$primary;
+      color: colors.$primary;
       -webkit-transform: translateY(-100%);
       transform: translateY(-100%);
       opacity: 0;
