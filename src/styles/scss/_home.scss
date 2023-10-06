@@ -5,6 +5,22 @@
 
 .home {
   background-color: colors.$black;
+  .active {
+    .phrase {
+      height: 50%;
+      overflow: hidden;
+      &:first-child {
+        //-webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+      }
+      &:last-child {
+        //-webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
   .content {
     position: relative;
     margin: {
@@ -30,24 +46,7 @@
     text-align: center;
     z-index: 1;
   }
-
-  .active {
-    .phrase {
-      height: 50%;
-      overflow: hidden;
-      &:first-child {
-        //-webkit-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-      }
-      &:last-child {
-        //-webkit-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  }
-.phrase {
+  .phrase {
     //letter-spacing: 0.025em;
     //color: #666262bf;
     //-webkit-text-stroke: 2px rgb(244, 244, 236);
