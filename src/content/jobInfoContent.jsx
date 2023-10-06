@@ -8,7 +8,7 @@ const jobInfo = [
     {
         path:"https://www.jato.com/germany/",
         companyName: 'Jato Dynamics Deutschland GmbH',
-        title:'als Automotive Data Analyst',
+        title:'als Automotive Data Analyst / Researcher',
         subText:'Jun 2018 - März 2021'      
     },
     {
