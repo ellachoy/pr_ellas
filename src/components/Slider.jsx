@@ -45,7 +45,7 @@ export default function Slider() {
                             <div className="image">
                                 <img src={slide.image} loading="lazy" alt="sliderImage" className="image" />
                             </div>
-                            <h4 className="h3">{slide.label}</h4>   
+                            <h4 className="h4">{slide.label}</h4>   
                     </ExternalLink>
                     <div>
                         <p>{slide.text}</p>
