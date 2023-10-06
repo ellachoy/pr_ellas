@@ -9,7 +9,7 @@
     },
     {
         title: 'Aktive Lernen',
-        description: 'Schokolade fallt nicht aus dem Himmel! immer am Lernen nach neues'
+        description: 'Schokolade fällt nicht aus dem Himmel! immer nach neues lernen. "heute baue ich toller als gestern!"'
     },
 ];
 
