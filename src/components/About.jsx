@@ -26,7 +26,7 @@ export default function About() {
               <li key={index}>
                 <div>
                   <h3 className="headline h5">{about.title}</h3>
-                  <p>{about.description}</p>
+                  <p className="description">{about.description}</p>
                 </div> 
               </li>
             ))}       
