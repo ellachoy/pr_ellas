@@ -4,7 +4,7 @@ import footerContent from '../content/footerContent';
 
 export default function Footer() {
   return (
-       <footer id="footer" className="section page-footer">
+       <footer id="footer" className="page-footer">
         <div className="wrapper">
             <div className="container">
                 <ul className="contact container">

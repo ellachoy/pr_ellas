@@ -1,5 +1,6 @@
 @use './mixins/breakpoint' as breakpoint;
 
+section,
 .section {
   padding: {
     block: {

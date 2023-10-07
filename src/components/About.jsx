@@ -6,17 +6,17 @@ import jobInfo from '../content/jobInfoContent';
 
 export default function About() {
   return (
-    <section id="about" className="section about">
+    <section id="about" className="about">
       <div className="wrapper">
         <div className="container">
           <div className="content">
             <Content
               title='About Me'
-              intro='Was ich wichtige Punkte als Frontend Web-Entwickler/in halte,' 
-              quote='Ich bin Ella und Junior Frontend Webentwicklerin. Ich brenne seit 2021 als Quereinsteigerin Frontend Web Entwicklung an.
+              intro='Welche Punkte ich als Frontend Web-Entwickler/in für wichtig halte:' 
+              quote='Ich bin Ella und Junior Frontend Webentwicklerin. Ich brenne seit 2021 als Quereinsteigerin in Frontend Web Entwicklung.
                   Ich bin offen dafür, verschiedene Technologien zu erlernen, welche für meine Arbeit relevant sind. Investiere 
                 gerne Zeit in die Recherche. „Der Wunsch, mehr zu lernen nach dem Motto heute baue ich noch tolles als gestern“.
-                durch langjährigen Berufserfahrung in Automobil Branche, mir ist bewusst, "Kommunikation", "Starke Metal zu besitzen" und "Aktive Lernen"
+                und durch langjährigen Berufserfahrung in Automobil Branche, mir ist bewusst, "Kommunikation", "Starke Metal zu besitzen" und "Aktive Lernen"
                 tolle Synergie macht für meine Arbeit.
              '           
             />

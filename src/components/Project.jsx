@@ -7,7 +7,7 @@ import Slider from './Slider';
 
 export default function Project() {
     return (
-        <section id="project" className="section project">
+        <section id="project" className="project">
             <div className="wrapper">
                 <Content
                     title='Projekte'               

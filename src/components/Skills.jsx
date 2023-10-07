@@ -8,7 +8,7 @@ export default function Skills() {
     return (
         <InView>
         {({ inView, ref}) => (
-            <section ref={ref} id="skills" className="section skills ">
+            <section ref={ref} id="skills" className="skills">
                 <div className={inView ? "is-in-viewport": "is-out-of-viewport"}>
                     <div className="wrapper">
                         <Content
