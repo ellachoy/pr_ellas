@@ -1,15 +1,15 @@
  const about = [
     {
         title: 'Kommunikation',
-        description: 'Kommunikation in Team, bringt beste Synergie, um bestes von Wert zu erschaffen '
+        description: 'Gute Kommunikation im Team erschafft eine Synergie , um einen Mehrwert für alle zu erschaffen '
     },
     {
-         title: 'Starke Mental',
-        description: 'Es gibt keine Sache, die ich nicht schaffen kann sondern die ich noch nicht versucht habe zu schaffen!'
+         title: 'Mentale Stärke',
+        description: 'Es gibt nichts, was ich nicht schaffen kann. Es bedeutet nur, dass ich es noch nicht versucht habe'
     },
     {
-        title: 'Aktive Lernen',
-        description: 'Schokolade fällt nicht aus dem Himmel! immer nach neues lernen. "heute baue ich toller als gestern!"'
+        title: 'Aktives Lernen',
+        description: 'Schokolade fällt nicht vom Himmel. Immer offen sein für etwas neues, um "heute baue ich etwas tolleres als gestern" zu Leben.'
     },
 ];
 

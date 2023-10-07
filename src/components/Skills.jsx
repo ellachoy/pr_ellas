@@ -13,8 +13,8 @@ export default function Skills() {
                     <div className="wrapper">
                         <Content
                             title='Skills'
-                            description='Ich habe seit Mai. 2022 Berufserfahrung in der Web-Entwicklung mit PHP, Native Javascript, Dart Sass, Hauseigene Content Management System und Entwicklung von Styleguid durch agilen Methoden gesammelt.
-                            noch dazu besitze Ich gute Auge für´s Ästhetik und Design'            
+                            description='Ich habe seit Mai 2022 Berufserfahrung in der Web-Entwicklung mit PHP, Native Javascript, Dart Sass, Hauseigene Content Management System und Entwicklung von Styleguid durch agile Methoden gesammelt.
+                            Dazu besitze Ich zwei gute Augen für´s Ästhetik und Design'            
                         />            
                         <ul className="skills-list">
                             {skills.map((skill, index) => (

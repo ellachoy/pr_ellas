@@ -15,7 +15,7 @@ export default function Project() {
                <Slider />
                 <div className="add-info join-projects">
                     <Content
-                        title='Beteiligte Firmen Projekte'               
+                        title='Firmen Projekte'               
                     />
                     <ul>
                         {companyProject.map((companyProject, index) =>(

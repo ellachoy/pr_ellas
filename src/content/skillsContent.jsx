@@ -5,7 +5,7 @@ const skills = [
     },
     {
         headline: 'CSS/SCSS',
-        description: 'Praktische Erfahrung im Schreiben von CSS mittels Dart sass / Umsetzung nicht nur für Mobile First sondern für alle Viewport',
+        description: 'Praktische Erfahrung im Schreiben von CSS mittels Dart sass / Umsetzung in Mobile First und alle anderen Viewports',
     },
     {
         headline: 'Javascript',
@@ -17,14 +17,14 @@ const skills = [
     },
     {
         headline: 'Tools',
-        description: 'Microsoft Teams / Jira / Confluence / Trello/ Figma / GitLab / GitHub / Yarn / Npm/ BrowserStack / Git / VSCode / IDE-PHPStorm / CMS system (bis her hauseigenes CMS System) ',
+        description: 'Microsoft Teams / Jira / Confluence / Trello/ Figma / GitLab / GitHub / Yarn / Npm/ BrowserStack / Git / VSCode / IDE-PHPStorm / CMS system (bisher hauseigenes CMS System) ',
     },
     {
         headline: 'Test',
         description: 'CanIUse / Validator.w3.org / BrowserStack / Ghostinspector  ',
     },
     {
-        headline: 'CI CD',
+        headline: 'CI/CD',
         description: 'Jenkins / Netlify',
     },
 ];
