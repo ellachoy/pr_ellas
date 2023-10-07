@@ -13,9 +13,13 @@
     display: flex;
     flex: {
       direction: column;
+      wrap: wrap;
+    }
+    justify: {
+      content: space-evenly;
     }
     gap: 24px 62px;
-    @include breakpoint.large-breakpoint {
+    @include breakpoint.medium-breakpoint {
       flex: {
         direction: row;
       }
