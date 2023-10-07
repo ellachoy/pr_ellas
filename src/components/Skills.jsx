@@ -21,7 +21,7 @@ export default function Skills() {
                                 >
                                     <div className="list-container">
                                         <h5 className="headline h5">{skill.headline}</h5>
-                                        <p className='description'>{skill.description}</p>
+                                        <p>{skill.description}</p>
                                     </div>  
                                 </li>                      
                             ))}          
