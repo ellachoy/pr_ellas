@@ -5,7 +5,7 @@ import follow from '../imgs/follow.jpeg';
 
 const SliderContent = [
     {
-        path: "https://dashing-semifreddo-d6bc58.netlify.app/",
+        path: "https://echoy.netlify.app/",
         image: ellas,
         label: "Ella´s Choice",
         text: "Bewerbungsprojekt 2023",
