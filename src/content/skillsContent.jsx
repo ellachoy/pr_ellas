@@ -23,6 +23,10 @@ const skills = [
         headline: 'Test',
         description: 'CanIUse / Validator.w3.org / BrowserStack / Ghostinspector  ',
     },
+    {
+        headline: 'CI CD',
+        description: 'Jenkins / Netlify',
+    },
 ];
 
 export default skills;
