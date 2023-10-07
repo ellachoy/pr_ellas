@@ -50,3 +50,9 @@ $gap: 24px;
     }
   }
 }
+
+.list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: 18px 8px;
+}

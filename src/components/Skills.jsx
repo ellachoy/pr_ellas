@@ -20,7 +20,7 @@ export default function Skills() {
                             {skills.map((skill, index) => (
                                 <li key={index} 
                                 >
-                                    <div className="container">
+                                    <div className="list-container">
                                         <h5 className="headline h5">{skill.headline}</h5>
                                         <p>{skill.description}</p>
                                     </div>  

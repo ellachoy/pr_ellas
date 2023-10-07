@@ -9,14 +9,14 @@
   .is-in-viewport {
     li {
       &:nth-child(odd) {
-        .container {
+        .list-container {
           -webkit-transform: translateX(0);
           transform: translateX(0);
           opacity: 1;
         }
       }
       &:nth-child(even) {
-        .container {
+        .list-container {
           -webkit-transform: translateX(0);
           transform: translateX(0);
           opacity: 1;
@@ -35,13 +35,9 @@
       }
     }
   }
-  @include breakpoint.medium-breakpoint {
-    flex-direction: row;
-  }
   li {
     width: calc(100% - 2rem);
     overflow: hidden;
-    flex: 0 0 auto;
     min-height: 0px;
     min-width: 0px;
     margin: {
@@ -59,41 +55,27 @@
         }
       }
     }
-    .container {
-      flex-wrap: unset;
-      align-items: baseline;
-      transition: transform 2s ease-out, -webkit-transform 2s ease-out,
-        opacity 2s ease-out;
-      gap: 0 16px;
-      flex-direction: column;
-      @include breakpoint.large-breakpoint {
-        flex-direction: row;
-      }
-    }
     &:nth-child(odd) {
-      .container {
+      .list-container {
         -webkit-transform: translateX(100%);
         transform: translateX(100%);
         opacity: 0;
       }
     }
     &:nth-child(even) {
-      .container {
+      .list-container {
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
         opacity: 0;
       }
     }
-    .headline {
-      min-width: 8rem;
-      height: 2rem;
-      margin: {
-        block: {
-          end: unset;
-        }
-        inline: {
-          end: 2rem;
-        }
+    .list-container {
+      display: flex;
+      flex-direction: column;
+      transition: transform 2s ease-out, -webkit-transform 2s ease-out,
+        opacity 2s ease-out;
+      @include breakpoint.medium-breakpoint {
+        display: grid;
       }
     }
     p {
