@@ -1,5 +1,6 @@
 @use './colors';
 @use './mixins/breakpoint' as breakpoint;
+@use './mixins/hover-focus' as hover-focus;
 
 .slider {
   .swiper-slide {
@@ -15,6 +16,12 @@
     }
     [href] {
       color: initial;
+      img {
+        transition: scale 0.5s ease-in-out;
+        @include hover-focus.hover-focus-state {
+          scale: 1.1;
+        }
+      }
     }
   }
 }
