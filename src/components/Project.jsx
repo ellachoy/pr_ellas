@@ -20,9 +20,11 @@ export default function Project() {
                     <ul>
                         {companyProject.map((companyProject, index) =>(
                             <li key={index}>
-                                <ExternalLink href={companyProject.path}>
-                                    <h6 className="h6 headline">{companyProject.headline}</h6>
-                                </ExternalLink> 
+                                {companyProject.path? 
+                                    <ExternalLink href={companyProject.path}>
+                                        <h6 className="h6 headline">{companyProject.headline}</h6>
+                                    </ExternalLink> : <h6 className="h6 headline">{companyProject.headline}</h6>
+                                }
                                 <p className="sub-title">{companyProject.subTitle}</p>                   
                                 <p className="sub-text">{companyProject.subText}</p>
                             </li>
