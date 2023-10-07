@@ -4,9 +4,7 @@ import {Link} from 'react-router-dom';
 
 import Symbols from './elements/symbols-list';
 
-
 export default function Header() {
-
    const [isOpen, setIsOpen] = useState(false);
    const toggleMenu = () => setIsOpen(!isOpen);
    const hide = () => setIsOpen(false);
@@ -21,40 +19,42 @@ export default function Header() {
       window.addEventListener('keydown', closeMenu);
       return () => {
       window.removeEventListener('keydown', closeMenu);
-    };
+   };
    }, []);
    
-  
-  return (
-    <header className={isOpen ? "is-nav-open" : "is-nav-close"}>
-      <div className='wrapper'>
-         <div className='container'>
-            <div className='logo'>
-               <Link to='#'>
-                  <span>E</span>
-                  <span>C</span>
-               </Link>
+   return (
+      <header className={isOpen ? "is-nav-open" : "is-nav-close"}>
+         <div className='wrapper'>
+            <div className='container'>
+               <div className='logo'>
+                  <Link to='#'>
+                     <span>E</span>
+                     <span>C</span>
+                  </Link>
+               </div>
+               <button className="trigger" aria-label="navigation menu toggle" onClick={() => toggleMenu() }></button>                                     
             </div>
-            <button className="trigger" aria-label="navigation menu toggle" onClick={() => toggleMenu() }></button>                                     
-         </div>
-         <nav>
-               <ul>
-                  <li>
-                     <AnchorLink href='#home' onClick={hide} onBlur={hide} onFocus={show}>Home</AnchorLink>
-                  </li>
-                  <li>
-                     <AnchorLink href='#about' onClick={hide} onBlur={hide} onFocus={show}>About</AnchorLink>
-                  </li>
-                  <li>
-                     <AnchorLink href='#skills' onClick={hide} onBlur={hide} onFocus={show}>Skills</AnchorLink>
-                  </li>
-                  <li>
-                     <AnchorLink href='#project' onClick={hide} onBlur={hide} onFocus={show}>Projects</AnchorLink>
-                  </li>
-               </ul>
-               <Symbols />    
-         </nav>        
-      </div>               
-   </header>
-  );
+            <nav>
+                  <ul>
+                     <li>
+                        <AnchorLink href='#home' onClick={hide} onBlur={hide} onFocus={show}>Home</AnchorLink>
+                     </li>
+                     <li>
+                        <AnchorLink href='#about' onClick={hide} onBlur={hide} onFocus={show}>About</AnchorLink>
+                     </li>
+                     <li>
+                        <AnchorLink href='#skills' onClick={hide} onBlur={hide} onFocus={show}>Skills</AnchorLink>
+                     </li>
+                     <li>
+                        <AnchorLink href='#project' onClick={hide} onBlur={hide} onFocus={show}>Projects</AnchorLink>
+                     </li>
+                     <li>
+                        <AnchorLink href='#contact' onClick={hide} onBlur={hide} onFocus={show}>Contact</AnchorLink>
+                     </li>
+                  </ul>
+                  <Symbols />    
+            </nav>        
+         </div>               
+      </header>
+   );
 }

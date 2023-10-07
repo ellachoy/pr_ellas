@@ -2,7 +2,7 @@ import {BsLinkedin} from 'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai';
 
-const footer = [
+const contact = [
     {
         path: "https://www.linkedin.com/in/ellachoy/",
         icon: <BsLinkedin/>,  
@@ -17,4 +17,4 @@ const footer = [
     },
 ];
 
-export default footer;
+export default contact;
