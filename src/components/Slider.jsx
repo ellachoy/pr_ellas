@@ -52,8 +52,7 @@ export default function Slider() {
                         <p>{slide.subText}</p>
                         <ExternalLink href={slide.gitpath} className='more'>
                             <span className='sub-text'>GitHub Repository</span>
-                        </ExternalLink>
-                                                                 
+                        </ExternalLink>                                                                
                     </div>                                
                 </SwiperSlide> 
             ))}                   
