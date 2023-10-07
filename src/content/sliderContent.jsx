@@ -26,7 +26,7 @@ const SliderContent = [
         path: "https://shiny-pegasus-1083d5.netlify.app",
         image: follow,
         label: "007 (Follow the target)",
-        text: "Side Projekt",
+        text: "Side Projekt für desktop",
         subText: "Nutzung der Web-Frontend Technologien: React, CSS",
         gitpath: "https://github.com/ellachoy/pr_follow",
         icon: {BsGithub},
