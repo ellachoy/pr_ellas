@@ -2,7 +2,6 @@ import { InView } from 'react-intersection-observer';
 import Symbols from './elements/symbols-list';
 
 export default function Home() {
-
   return (
     <InView>
       {({inView, ref}) => (

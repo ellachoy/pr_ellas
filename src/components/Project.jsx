@@ -4,7 +4,6 @@ import Content from './elements/content';
 import companyProject from '../content/companyProjectContent';
 import Slider from './Slider';
 
-
 export default function Project() {
     return (
         <section id="project" className="project">
@@ -12,7 +11,7 @@ export default function Project() {
                 <Content
                     title='Projekte'               
                 />
-               <Slider />
+                <Slider />
                 <div className="add-info join-projects">
                     <Content
                         title='Firmen Projekte'               

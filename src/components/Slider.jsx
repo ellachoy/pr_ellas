@@ -22,7 +22,6 @@ export default function Slider() {
             keyboard={{
                 enabled: true,
             }}
-            lazy={true}
             scrollbar={true}
             breakpoints={{
                 640: {
@@ -43,7 +42,7 @@ export default function Slider() {
                 <SwiperSlide key={index}>                  
                         <ExternalLink href={slide.path}>
                             <div className="image">
-                                <img src={slide.image} loading="lazy" alt="sliderImage" className="image" />
+                                <img src={slide.image} alt="sliderImage" className="image" />
                             </div>
                             <h4 className="h6">{slide.label}</h4>   
                     </ExternalLink>

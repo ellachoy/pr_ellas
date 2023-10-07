@@ -31,10 +31,6 @@ const SliderContent = [
         gitpath: "https://github.com/ellachoy/pr_follow",
         icon: {BsGithub},
     },
-   
-
-
-
 ];
 
 export default SliderContent;

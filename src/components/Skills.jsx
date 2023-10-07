@@ -4,7 +4,6 @@ import Content from './elements/content';
 
 
 export default function Skills() {
-
     return (
         <InView>
         {({ inView, ref}) => (
@@ -31,6 +30,6 @@ export default function Skills() {
                 </div>                          
             </section>
         )}
-       </InView>
+    </InView>
     );
 }
