@@ -78,6 +78,13 @@
         display: grid;
       }
     }
+    .headline {
+      margin: {
+        block: {
+          end: unset;
+        }
+      }
+    }
     p {
       margin: {
         block: {
