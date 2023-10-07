@@ -20,7 +20,7 @@ a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 8px;
-  text-decoration-color: grey;
+  text-decoration-color: rgb(219 219 212);
   @include hover-focus.hover-focus-state {
     text-decoration-color: colors.$primary;
   }
