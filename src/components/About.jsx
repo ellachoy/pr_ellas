@@ -25,7 +25,7 @@ export default function About() {
             {about.map((about, index) => (
               <li key={index}>
                 <div>
-                  <h3 className="headline h4">{about.title}</h3>
+                  <h3 className="headline h5">{about.title}</h3>
                   <p>{about.description}</p>
                 </div> 
               </li>
