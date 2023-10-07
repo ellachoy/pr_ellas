@@ -27,10 +27,8 @@ export default function Header() {
          <div className='wrapper'>
             <div className='container'>
                <div className='logo'>
-                  <Link to='#'>
-                     <span>E</span>
-                     <span>C</span>
-                  </Link>
+                  <span>E</span>
+                  <span>C</span>
                </div>
                <button className="trigger" aria-label="navigation menu toggle" onClick={() => toggleMenu() }></button>                                     
             </div>

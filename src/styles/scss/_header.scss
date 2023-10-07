@@ -59,7 +59,7 @@ header {
     }
   }
   line-height: 1;
-  color: red;
+  position: relative;
   span {
     transition: color 0.33s ease-in-out;
   }
@@ -69,6 +69,6 @@ header {
   span:last-child {
     color: colors.$secondary;
     position: absolute;
-    top: 7px;
+    top: 22px;
   }
 }
