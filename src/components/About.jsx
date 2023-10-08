@@ -17,8 +17,7 @@ export default function About() {
                     Seit dem Quereinsieg treibt mich täglich das Motto: "Heute baue ich wieder etwas grossartiges!".
                     Hierfür investiere ich gerne meine Zeit um neue Technologien zu erlernen und es anzuwenden.
                     Das finde ich sehr spannend.
-                    In meiner langjährigen Berufserfahrung sind mir drei Kernpunkte wichtig geworden:       
-                  '           
+                    In meiner langjährigen Berufserfahrung sind mir drei Kernpunkte wichtig geworden:'           
             />
           </div>       
           <ul className="lists panel">
