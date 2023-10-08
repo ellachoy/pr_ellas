@@ -1,6 +1,6 @@
 # Bewebungsportfolio "Ella´s Choice"
 
-Link (https://dashing-semifreddo-d6bc58.netlify.app/).
+Link (https://echoy.netlify.app).
 
 ## Ziel
 
