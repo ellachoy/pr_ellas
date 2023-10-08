@@ -1,7 +1,7 @@
  const about = [
     {
         title: 'Kommunikation',
-        description: 'Gute Kommunikation im Team erschafft eine Synergie , um einen Mehrwert für alle zu erschaffen '
+        description: 'Gute Kommunikation im Team bildet neue Synergien , um einen Mehrwert für alle zu erschaffen '
     },
     {
          title: 'Mentale Stärke',

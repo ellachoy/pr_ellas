@@ -5,6 +5,7 @@ import about from '../content/aboutContent';
 import jobInfo from '../content/jobInfoContent';
 
 export default function About() {
+  
   return (
     <section id="about" className="about">
       <div className="wrapper">
@@ -16,8 +17,13 @@ export default function About() {
               quote='Ich bin Ella und Junior Frontend Webentwicklerin. Ich brenne seit 2021 als Quereinsteigerin in Frontend Web Entwicklung.
                     Seit dem Quereinsieg treibt mich täglich das Motto: "Heute baue ich wieder etwas grossartiges!".
                     Hierfür investiere ich gerne meine Zeit um neue Technologien zu erlernen und es anzuwenden.
-                    Das finde ich sehr spannend.
-                    In meiner langjährigen Berufserfahrung sind mir drei Kernpunkte wichtig geworden:'           
+                    Natürlich ist es nicht einfach, ständig zu lernen und sich zu verbessern.
+                    Als ich nach Abschluss der theoretischen Weiterbildung in „Webentwicklung“ als Junior-Webentwickler in das Unternehmen eintrat,
+                    hatte ich Anfangs mit Frustration und Imposter-Syndrom zu kämpfen.
+                    Ich habe versucht, meine Mentalität zu stärken und mich auf meine tägliche Entwicklung zu konzentrieren.
+                    Weil es mir länger klar war, dass mein Herz für die Webentwicklung schlägt.
+                    Frontend-Webentwicklung ist etwas von Kunst und Magie ...
+                    deshalb sind mir drei Kernpunkte wichtig geworden:'           
             />
           </div>       
           <ul className="lists panel">
