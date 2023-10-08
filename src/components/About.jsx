@@ -20,7 +20,7 @@ export default function About() {
                     Natürlich ist es nicht einfach, ständig zu lernen und sich zu verbessern.
                     Als ich nach Abschluss der theoretischen Weiterbildung in „Webentwicklung“ als Junior-Webentwickler in das Unternehmen eintrat,
                     hatte ich Anfangs mit Frustration und Imposter-Syndrom zu kämpfen.
-                    Ich habe versucht, meine Mentalität zu stärken und mich auf meine tägliche Entwicklung zu konzentrieren.
+                    Ich habe versucht, meine mental Haltung zu stärken und mich auf meine tägliche Entwicklung zu konzentrieren.
                     Weil es mir länger klar war, dass mein Herz für die Webentwicklung schlägt.
                     Frontend-Webentwicklung ist etwas von Kunst und Magie ...
                     deshalb sind mir drei Kernpunkte wichtig geworden:'           
