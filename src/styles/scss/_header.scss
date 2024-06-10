@@ -5,9 +5,6 @@
 @use './mixins/hover-focus' as hover-focus;
 
 header {
-  background: {
-    color: colors.$black;
-  }
   z-index: 5;
   position: fixed;
   top: 0;
@@ -67,8 +64,9 @@ header {
     color: colors.$primary;
   }
   span:last-child {
-    color: colors.$secondary;
+    color: colors.$primary-deep;
     position: absolute;
-    top: 22px;
+    top: 26px;
+    left: 10px;
   }
 }

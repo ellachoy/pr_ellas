@@ -4,15 +4,15 @@ section,
 .section {
   padding: {
     block: {
-      start: 6rem;
-      end: 6rem;
+      start: 2rem;
+      end: 2rem;
     }
   }
   @include breakpoint.medium-breakpoint {
     padding: {
       block: {
-        start: 8rem;
-        end: 8rem;
+        start: 4rem;
+        end: 4rem;
       }
     }
   }

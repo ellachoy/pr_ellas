@@ -80,8 +80,8 @@ nav {
   &::before,
   &::after {
     content: '';
-    height: 4px;
-    width: 30px;
+    height: 2px;
+    width: 26px;
     display: block;
     font-size: 16px;
     margin: {
@@ -95,7 +95,8 @@ nav {
       }
     }
     background: {
-      color: colors.$white-inactive;
+      // color: colors.$white-inactive;
+      color: colors.$black;
     }
     transition: {
       property: color, background-color, transform;
