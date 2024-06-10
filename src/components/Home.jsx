@@ -1,5 +1,4 @@
 import { InView } from 'react-intersection-observer'
-import Symbols from './elements/symbols-list'
 
 export default function Home() {
   return (
@@ -20,7 +19,6 @@ export default function Home() {
                     </div>
                   </div>
                 </h1>
-                {/* <Symbols /> */}
               </div>
             </div>
           </div>
