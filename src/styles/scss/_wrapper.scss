@@ -35,3 +35,20 @@ $padding: 10%;
     }
   }
 }
+
+.outer-wrapper {
+  padding: {
+    inline: {
+      start: 2%;
+      end: 2%;
+    }
+  }
+  @include breakpoint.large-breakpoint {
+    padding: {
+      inline: {
+        start: 5%;
+        end: 5%;
+      }
+    }
+  }
+}

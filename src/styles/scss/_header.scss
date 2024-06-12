@@ -15,39 +15,11 @@ header {
       end: 1rem;
     }
   }
-  &.is-nav-open {
-    nav {
-      display: block;
-      &::after {
-        background-color: black;
-        opacity: 1;
-        transition: opacity 1.25s ease-in-out;
-      }
-    }
-    .trigger {
-      &::before {
-        transform: translateY(0) rotate(45deg);
-      }
-      &::after {
-        transform: translateY(-9px) rotate(-45deg);
-      }
-    }
-  }
-  .container {
-    flex: {
-      direction: row;
-    }
-    align-items: start;
-    @include breakpoint.large-breakpoint {
-      align-items: center;
-    }
-  }
 }
-
 .logo {
+  z-index: 5;
   font: {
     size: clamp(32px, 2vw, 42px);
-    weight: map.get(typo.$font-weights, 'regular');
   }
   padding: {
     block: {
@@ -55,11 +27,7 @@ header {
       end: 1rem;
     }
   }
-  line-height: 1;
   position: relative;
-  span {
-    transition: color 0.33s ease-in-out;
-  }
   span:first-child {
     color: colors.$primary;
   }
