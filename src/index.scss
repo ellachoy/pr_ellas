@@ -1,1 +1,13 @@
 @use './styles/scss/main.scss';
+
+:root {
+  --color-loading: #cd9c0a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}

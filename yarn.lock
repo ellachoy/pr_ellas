@@ -5708,6 +5708,7 @@ __metadata:
     react-router-dom: ^6.16.0
     react-scripts: 5.0.1
     react-slider-swiper: ^2.0.6
+    react-spinners: ^0.13.8
     resolve-url-loader: ^5.0.0
     sass: ^1.68.0
     source-map-loader: ^4.0.1
@@ -11765,6 +11766,16 @@ __metadata:
     react-dom: ^0.14.0 || ^15.0.0
     swiper: 3.4.2
   checksum: 91030a3ce3aa38ef48f110a483d3ac83102bb150cdcf7b31e6ff73073a48ec635059e2fe3441d70117096ca6b9c8e41f41b99e01ee4cb4433cb5d54660a43e6f
+  languageName: node
+  linkType: hard
+
+"react-spinners@npm:^0.13.8":
+  version: 0.13.8
+  resolution: "react-spinners@npm:0.13.8"
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: cb58f916bbf00c4f7fc33c1a75a8c0f91a98a42af26944340a0e29e4b3a97937a03f0292bc444eb5f5f0bea099344b580f9c04a81524246dadbf0571bdb57e62
   languageName: node
   linkType: hard
 
