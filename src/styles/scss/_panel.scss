@@ -45,7 +45,7 @@
         transition-delay: 1.2s;
       }
       div {
-        color: #c8c8c8;
+        color: #dce8e8;
         text-align: center;
         position: absolute;
         top: clamp(16%, 10vw, 20%);
@@ -67,7 +67,7 @@
       }
     }
     .description {
-      color: #c6c8c8;
+      color: #dce8e8;
     }
   }
   @include breakpoint.large-breakpoint {
