@@ -24,6 +24,7 @@
     margin: {
       block: {
         start: 80px;
+        end: 80px;
       }
     }
     @include breakpoint.large-breakpoint {
