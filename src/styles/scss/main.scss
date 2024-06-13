@@ -17,11 +17,4 @@
 @use './footer';
 @use './slider';
 @use './image';
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+@use './panel' 
