@@ -3,11 +3,6 @@
 
 .panel {
   ul {
-    margin: {
-      block: {
-        start: 80px;
-      }
-    }
     display: flex;
     flex: {
       direction: column;
@@ -69,6 +64,13 @@
         block: {
           end: unset;
         }
+      }
+    }
+  }
+  @include breakpoint.large-breakpoint {
+    margin: {
+      block: {
+        start: 80px;
       }
     }
   }
