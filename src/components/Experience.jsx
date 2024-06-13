@@ -8,13 +8,16 @@ export default function Experience() {
     <div className='experience'>
       <Content title='Berufserfahrung' />
       <ul>
-        {jobInfo.map((jobInfo, index) => (
-          <li key={index}>
-            <ExternalLink href={jobInfo.path}>
-              <h6 className='h6 headline'>{jobInfo.companyName}</h6>
+        {jobInfo.map(({ path, companyName, title, description, periode }) => (
+          <li key={path}>
+            <ExternalLink href={path}>
+              <p className='headline'>
+                {title}
+                {companyName}
+              </p>
             </ExternalLink>
-            <p className='sub-title'>{jobInfo.title}</p>
-            <p className='sub-text'> {jobInfo.subText}</p>
+            <p className='description'>{description}</p>
+            <p className='periode'> {periode}</p>
           </li>
         ))}
       </ul>
