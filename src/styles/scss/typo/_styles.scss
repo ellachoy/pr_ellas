@@ -27,9 +27,6 @@ body {
 }
 
 :is(.h1, .h2, .h3, .h4, .h5, .h6) {
-  font: {
-    // weight: map.get(variables.$font-weights, 'bold');
-  }
   word: {
     break: break-word;
   }
@@ -115,9 +112,15 @@ p {
   }
 }
 
+.sub-title {
+  font: {
+    size: clamp(14px, 1.5vw, 16px);
+  }
+}
+
 .sub-text {
   font: {
-    size: clamp(14px, 1vw, 16px);
+    size: clamp(12px, 1vw, 14px);
   }
   color: colors.$sub-text;
 }
@@ -130,7 +133,7 @@ blockquote {
   position: relative;
   padding: {
     block: {
-      start: 3rem;
+      start: 1rem;
       end: 3rem;
     }
   }
@@ -146,7 +149,7 @@ blockquote {
       }
       color: colors.$primary-quote;
       position: absolute;
-      top: 25px;
+      top: 6px;
       left: -35px;
     }
   }

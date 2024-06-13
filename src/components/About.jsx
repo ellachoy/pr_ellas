@@ -1,16 +1,16 @@
 import React from 'react'
-import { ExternalLink } from 'react-external-link'
 import Content from './elements/content'
-import jobInfo from '../content/jobInfoContent'
+
 import EllaFoto from '../assets/ella-foto.jpeg'
 import Panel from './Panel'
+import Experience from './Experience'
 
 export default function About() {
   return (
     <section id='about' className='about'>
       <div className='wrapper'>
         <Content
-          title='About Me'
+          title='Über mich'
           intro='Welche Punkte ich als Web-Entwickler/in für wichtig halte:'
         />
         <div className='container'>
@@ -30,21 +30,7 @@ export default function About() {
           </div>
         </div>
         <Panel />
-
-        <div className='add-info'>
-          <Content title='Berufserfahrung' />
-          <ul>
-            {jobInfo.map((jobInfo, index) => (
-              <li key={index}>
-                <ExternalLink href={jobInfo.path}>
-                  <h6 className='h6 headline'>{jobInfo.companyName}</h6>
-                </ExternalLink>
-                <p className='sub-title'>{jobInfo.title}</p>
-                <p className='sub-text'> {jobInfo.subText}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <Experience />
       </div>
     </section>
   )
