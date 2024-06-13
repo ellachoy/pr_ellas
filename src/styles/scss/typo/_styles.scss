@@ -103,6 +103,10 @@ p {
   }
 }
 
+.intro {
+  color: #8a908e;
+}
+
 .description {
   font: {
     size: 14px;
@@ -139,7 +143,7 @@ blockquote {
   }
   > p {
     font-style: italic;
-    color: colors.$grey;
+    color: #8a908e;
     &::before {
       content: open-quote;
       font: {

@@ -3,9 +3,9 @@
 
 .skills {
   background: {
-    color: colors.$black;
+    color: colors.$white;
   }
-  color: colors.$white;
+  color: #8a908e;
   .is-in-viewport {
     li {
       &:nth-child(odd) {
@@ -79,6 +79,14 @@
       }
     }
     .headline {
+      padding: 8px 18px;
+      border-radius: 20px;
+      background-color: colors.$primary;
+      color: colors.$white;
+      font-size: 14px;
+      width: 42%;
+      text-align: center;
+
       margin: {
         block: {
           end: unset;
@@ -86,6 +94,7 @@
       }
     }
     p {
+      color: #737068;
       margin: {
         block: {
           start: unset;
