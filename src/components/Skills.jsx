@@ -11,7 +11,7 @@ export default function Skills() {
             <div className='wrapper'>
               <Content
                 title='Skills'
-                description='Berufserfahrung in der Webentwicklung mit PHP, Native Javascript, Dart Sass, CMS, React und Entwicklung von Styleguid und Storybook durch agile Methoden gesammelt.
+                description='Berufserfahrung in der Webentwicklung mit PHP, Native Javascript, Dart Sass, CMS, React und Entwicklung von Styleguid und Storybook durch agile Methoden.
                             Dazu besitze Ich zwei gute Augen für´s Ästhetik und Design'
               />
               <ul className='skills-list'>

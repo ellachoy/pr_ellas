@@ -19,6 +19,7 @@
     background: {
       color: #cd9c0acc;
     }
+    aspect-ratio: var(--aspect-ratio, 1/1);
   }
   img {
     max-width: 350px;

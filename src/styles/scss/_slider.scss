@@ -24,6 +24,21 @@
       }
     }
   }
+  .image {
+    aspect-ratio: var(--aspect-ratio, 16/9);
+
+    img {
+      border: colors.$primary 1px solid;
+    }
+  }
+  .title {
+    font-weight: 500;
+    font-style: oblique;
+  }
+  .sub-text {
+    color: colors.$grey;
+    font-size: 12px;
+  }
 }
 
 .swiper-button-prev,
