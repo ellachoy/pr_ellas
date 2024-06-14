@@ -17,10 +17,10 @@ export default function Project() {
               <li key={index}>
                 {companyProject.path ? (
                   <ExternalLink href={companyProject.path}>
-                    <h6 className='h6 headline'>{companyProject.headline}</h6>
+                    <p className='h6 headline'>{companyProject.headline}</p>
                   </ExternalLink>
                 ) : (
-                  <h6 className='h6 headline'>{companyProject.headline}</h6>
+                  <p className='h6 headline'>{companyProject.headline}</p>
                 )}
                 <p className='sub-title'>{companyProject.subTitle}</p>
                 <p className='periode'>{companyProject.subText}</p>

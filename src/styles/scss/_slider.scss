@@ -26,10 +26,7 @@
   }
   .image {
     aspect-ratio: var(--aspect-ratio, 16/9);
-
-    img {
-      border: colors.$primary 1px solid;
-    }
+    border: colors.$primary 1px solid;
   }
   .title {
     font-weight: 500;
