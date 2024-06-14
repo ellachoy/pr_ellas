@@ -15,13 +15,17 @@ const skills = [
   },
   {
     headline: 'Basiswissen',
-    description:
-      'PHP (mit Berufspraxis) / React (mit Berufspraxis)',
+    description: 'PHP (mit Berufspraxis) / React (mit Berufspraxis)',
   },
   {
     headline: 'Tools',
     description:
-      'Microsoft Teams / Jira / Confluence / Trello/ Figma / GitLab / GitHub / Yarn / Npm/ BrowserStack / Git / VSCode / IDE-PHPStorm / CMS system (bisher hauseigenes CMS System) ',
+      'Microsoft Teams / Jira / Confluence / Trello/ Figma / GitLab / GitHub / Yarn / Npm / BrowserStack / VSCode / IDE-PHPStorm / CMS system (bisher hauseigenes CMS System) / Graphql',
+  },
+  {
+    headline: 'Git',
+    description:
+      'verwenden Git (Pull, Commit, Push, Merge Request, Merge, Create Branch …, verwenden  GitLab-IDE für Code Reviews) ',
   },
   {
     headline: 'Test',
