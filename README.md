@@ -1,10 +1,6 @@
-# Bewebungsportfolio "Ella´s Choice"
+# Relauch-Bewebungsportfolio "Ella´s Choice"
 
-Link (https://echoy.netlify.app).
-
-## Ziel
-
-Ich habe keine Berufserfahrung mit React. aber da ich im Jahr 2021 React kennengelernt hatte, wollte mein Wissen über React erfrischen und weiter entwickeln
+Link [(https://echoy.netlify.app)](https://ellaschoice.netlify.app/).
 
 ### Skills
 - create-react-app (react)
@@ -14,9 +10,10 @@ Ich habe keine Berufserfahrung mit React. aber da ich im Jahr 2021 React kenneng
 - react-external-link
 - react-slider-swiper
 - node-sass
+- Emailjs
+- Spinner
 
-#### weiteren Plan
-- website verbessern mit entwickelten React Kentnissen
+
 
 
 
