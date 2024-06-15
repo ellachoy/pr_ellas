@@ -1,6 +1,5 @@
 import React from 'react'
 import Content from './elements/content'
-
 import EllaFoto from '../assets/ella-foto.jpeg'
 import Panel from './Panel'
 import Experience from './Experience'
