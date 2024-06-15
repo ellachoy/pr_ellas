@@ -1,0 +1,38 @@
+@use './colors';
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input,
+  textarea {
+    cursor: pointer;
+    background: transparent;
+    padding: 20px 22px;
+    border-color: colors.$white-inactive;
+  }
+
+  form {
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+  }
+  label {
+    margin-right: 15px;
+  }
+  .submit-button {
+    color: colors.$black;
+    background-color: colors.$white-inactive;
+    border-radius: 10%;
+    padding: 8px 12px;
+    text-align: center;
+    transition: background-color 1.2s ease-in-out, color 1.2s ease-in-out;
+    &:hover {
+      background-color: colors.$black;
+      color: colors.$white;
+    }
+  }
+}

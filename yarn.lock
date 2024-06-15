@@ -1814,6 +1814,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emailjs/browser@npm:^4.3.3":
+  version: 4.3.3
+  resolution: "@emailjs/browser@npm:4.3.3"
+  checksum: b9756ac5f2655aef96cc200b565a6c123c6fb5415d2c90d7385577e55da1b3d3fd4418ddf684b2775b728b533555fab4ba599be76d4fb6aa929c14010d2c7090
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -5693,6 +5700,7 @@ __metadata:
   resolution: "ellas@workspace:."
   dependencies:
     "@babel/plugin-proposal-private-property-in-object": ^7.21.11
+    "@emailjs/browser": ^4.3.3
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
     "@testing-library/user-event": ^13.2.1

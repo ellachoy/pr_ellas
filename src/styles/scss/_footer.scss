@@ -14,7 +14,7 @@
     }
   }
   .container {
-    gap: 16px 28px;
+    gap: 16px;
   }
 }
 
@@ -32,15 +32,15 @@
     }
     &.has-icon {
       svg {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
       }
     }
   }
   &.container {
     margin: {
       block: {
-        start: 2rem;
-        end: 2.5rem;
+        start: 3rem;
+        end: 1rem;
       }
     }
   }
