@@ -8,7 +8,7 @@
   input,
   textarea {
     cursor: pointer;
-    background: transparent;
+
     padding: 20px 22px;
     border-color: colors.$white-inactive;
   }
@@ -25,7 +25,6 @@
   }
   .submit-button {
     color: colors.$black;
-    background-color: colors.$white-inactive;
     border-radius: 10%;
     padding: 8px 12px;
     text-align: center;
