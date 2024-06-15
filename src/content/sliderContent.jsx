@@ -1,6 +1,5 @@
 import { BsGithub } from 'react-icons/bs'
 import ellas from '../assets/web-ellaschoicehome.jpeg'
-import ella2023 from '../imgs/pr_ellas2.jpg'
 import ella2022 from '../imgs/pr_ella.jpg'
 import follow from '../imgs/follow.jpeg'
 import bobaekim from '../assets/web-bobaekim.jpeg'
@@ -24,15 +23,6 @@ const SliderContent = [
     gitpath: 'https://github.com/ellachoy/pr_ellas/tree/relaunch2024',
     icon: { BsGithub },
   },
-  // {
-  //   path: 'https://echoy.netlify.app',
-  //   image: ella2023,
-  //   label: 'Ella´s',
-  //   text: 'Bewerbungsportfolio 2023',
-  //   subText: 'Nutzung der Web Technologien: React, SCSS',
-  //   gitpath: 'https://github.com/ellachoy/pr_ellas',
-  //   icon: { BsGithub },
-  // },
   {
     path: 'https://ellachoy.github.io/Ella_Portfolio/',
     image: ella2022,
