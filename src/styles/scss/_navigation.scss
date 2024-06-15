@@ -7,7 +7,7 @@
 nav {
   position: fixed;
   left: auto;
-  right: 2%;
+  right: 0;
   top: 0;
   bottom: 0;
   z-index: 1;
@@ -98,7 +98,7 @@ nav {
   border-radius: 50%;
   position: absolute;
   top: 30px;
-  right: -2px;
+  right: 10px;
   &::before,
   &::after {
     content: '';
