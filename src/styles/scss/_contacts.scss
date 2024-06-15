@@ -4,11 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   input,
   textarea {
     cursor: pointer;
-
     padding: 20px 22px;
     border-color: colors.$white-inactive;
   }
