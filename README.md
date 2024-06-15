@@ -1,7 +1,8 @@
 # Bewebungsportfolio "Ella´s Choice"
 
-Link relauch: [(https://echoy.netlify.app)](https://ellaschoice.netlify.app/)
-Link (https://echoy.netlify.app).
+Link relauch 2024: [(https://echoy.netlify.app)](https://ellaschoice.netlify.app/)
+
+Link aus 2023 (https://echoy.netlify.app).
 
 
 ### Skills
