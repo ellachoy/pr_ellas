@@ -98,7 +98,7 @@ nav {
   border-radius: 50%;
   position: absolute;
   top: 30px;
-  right: 2px;
+  right: -2px;
   &::before,
   &::after {
     content: '';
